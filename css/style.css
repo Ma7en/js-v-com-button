@@ -1,0 +1,9670 @@
+
+
+/* font goolge */
+/* font-family: 'Poppins', sans-serif; */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --color: red;
+    --main-transition: all .5s;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+
+}
+
+
+
+/* start button all */
+.button {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+}
+
+.button > .container {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* .none {
+    display: none;
+} */
+
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* bast background-color 
+background-color: #15212d;
+
+
+
+*/
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 1 */
+
+.button-1 {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+}
+
+.button-1 .container {
+    display: grid;
+    place-items: center;
+}
+
+.button-1 .btn a {
+    position: relative;
+    display: block;
+    height: 70px;
+    width: 220px;
+    text-align: center;
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.button-1 .btn a span {
+    text-transform: capitalize;
+    height: 88%;
+    width: 96%;
+    background: #111;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    line-height: 62px;
+    color: #f5f5f5;
+    font-size: 25px;
+    border-radius: 6px;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.button-1 .btn a:hover {
+    animation: b1animate 1s linear infinite;
+    -webkit-animation: b1animate 1s linear infinite;
+}
+
+@keyframes b1animate {
+    100% {
+        filter: hue-rotate(-360deg);
+        -webkit-filter: hue-rotate(-360deg);
+}
+}
+
+
+
+
+
+/* end button 1 */
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 2 */
+
+.button-2 {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+}
+
+.button-2 .container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.button-2 .btn {
+    padding: .7em 2em;
+    background: #1c1c1c;
+    color: #fff;
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.button-2 .btn:hover {
+    background: #1c1c1c;
+}
+
+.button-2 .btn::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    z-index: 0;
+    transition: var(--main-transition);
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.button-2 .btn span {
+    z-index: 2;
+    text-transform: capitalize;
+}
+
+.button-2 .btn1:hover::before {
+    width: 30%;
+}
+
+.button-2 .btn2::before {
+    width: 0;
+}
+
+.button-2 .btn2:hover::before {
+    width: 100%;
+}
+
+.button-2 .btn3::before {
+    left: -100%;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+
+.button-2 .btn3:hover::before {
+    left: 0;
+}
+
+
+
+
+
+
+/* end button 2 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 3 */
+
+.button-3 {
+    background: #162052;
+}
+
+.button-3 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-3 .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-3 .btn a {
+    /* flex-basis: 45%; */
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    font-size: 20px;
+    width: fit-content;
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    border: 1px solid #fff;
+    transition: var(--main-transition);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.button-3 .btn a:nth-child(2) {
+    background-color: #fff;
+    color: #000;
+}
+
+.button-3 .btn a:nth-child(1):hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+}
+
+.button-3 .btn a:nth-child(2):hover {
+    background-color: transparent;
+    color: #fff;
+    transform: scale(.9);
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+}
+
+
+
+/* end button 3 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 4 */
+
+.button-4 {
+    background: #d8d8d8;
+}
+
+.button-4 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-4 a {
+    color: #5065a0;
+    text-transform: capitalize;
+    text-align: center;
+    border: 1px solid #5065a0;
+    padding: 10px 20px;
+    box-shadow: rgb(17 22 26 / 16%) 0px 0px 8px 0px, rgb(17 22 26 / 8%) 0px 4px 8px 0px, rgb(17 22 26 / 8%) 0px 8px 16px 0px;
+    width: fit-content;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+
+    white-space: nowrap;
+    vertical-align: middle;
+
+    border-radius: 5px;
+    transition: var(--main-transition);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.button-4 a:hover {
+    background-color: #5065a0;
+    color: #ffffff;
+    opacity: 0.9;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 14px 2px;
+    transform: translateY(-2px);
+    transition: var(--main-transition) ease-in-out;
+    -webkit-transition: var(--main-transition) ease-in-out;
+    -moz-transition: var(--main-transition) ease-in-out;
+    -ms-transition: var(--main-transition) ease-in-out;
+    -o-transition: var(--main-transition) ease-in-out;
+}
+
+
+
+
+/* end button 4 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 6 */
+
+.button-6 {
+    background-color: #e2e2e2;
+}
+
+.button-6 .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-6 .toggle {
+    cursor: pointer;
+    position: relative;
+    height: 70px;
+    width: 70px;
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    border-bottom-left-radius: 100px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+.button-6 .toggle::before,
+.button-6 .toggle::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.button-6 .toggle::before {
+    top: -50%;
+    left: 0;
+}
+
+.button-6 .toggle::after {
+    right: -50%;
+    top: 0;
+}
+
+.button-6 .toggle,
+.button-6 .toggle::before,
+.button-6 .toggle::after  {
+    transition-delay: .3s;
+    transition: var(--main-transition) linear;
+    -webkit-transition: var(--main-transition) linear;
+    -moz-transition: var(--main-transition) linear;
+    -ms-transition: var(--main-transition) linear;
+    -o-transition: var(--main-transition) linear;
+}
+
+.button-6 .toggle.forward,
+.button-6 .toggle.forward::before,
+.button-6 .toggle.forward::after  {
+    background-color: #eb608c;
+}
+
+.button-6 .toggle .circle {
+    position: absolute;
+    left: 7px;
+    top: -28px;
+    height: 55px;
+    width: 55px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.button-6 .toggle.forward .circle {
+    animation: b6front .6s linear forwards;
+    -webkit-animation: b6front .6s linear forwards;
+}
+
+@keyframes b6front {
+    0% {
+        left: 7px;
+        top: -28px;
+    }
+    50% {
+        top: -1px;
+        left: 17px;
+    }
+    100% {
+        left: 42px;
+        top: 7px;
+    }
+}
+
+.button-6 .toggle.reverse .circle {
+    animation: b6back .6s linear forwards;
+    -webkit-animation: b6back .6s linear forwards;
+}
+
+@keyframes b6back {
+    0% {
+        left: 42px;
+        top: 7px;
+    }
+    50% {
+        top: -1px;
+        left: 17px;
+    }
+    100% {
+        left: 7px;
+        top: -28px;
+    }
+}
+
+
+
+
+/* end button 6 */
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 7 */
+
+/* end button 7 */
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 8 */
+
+/* end button 8 */
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 9 */
+
+/* end button 9 */
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 5 */
+
+.button-5 {
+    background: #00000082;
+}
+
+.button-5 .cont {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+    align-content: stretch;
+    gap: 20px;
+    overflow: hidden;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+
+
+/* btn 1 */
+.btn-1,
+.btn-1 *,
+.btn-1 :after,
+.btn-1 :before,
+.btn-1:after,
+.btn-1:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+.btn-1 {
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+
+.btn-1:disabled {
+    cursor: default;
+}
+.btn-1:-moz-focusring {
+    outline: auto;
+}
+.btn-1 svg {
+    display: block;
+    vertical-align: middle;
+}
+.btn-1 [hidden] {
+    display: none;
+}
+.btn-1 {
+    border-radius: 99rem;
+    border-width: 2px;
+    padding: 0.8rem 3rem;
+}
+.btn-1:hover {
+    color: #999;
+}
+
+
+
+/* btn 2 */
+.btn-2,
+.btn-2 *,
+.btn-2 :after,
+.btn-2 :before,
+.btn-2:after,
+.btn-2:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-2 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-2:disabled {
+  cursor: default;
+}
+.btn-2:-moz-focusring {
+  outline: auto;
+}
+.btn-2 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-2 [hidden] {
+  display: none;
+}
+.btn-2 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-2 span {
+  mix-blend-mode: difference;
+}
+.btn-2:before {
+  background: #fff;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateX(var(--progress, -100%));
+  transition: transform 0.2s ease;
+}
+.btn-2:hover:before {
+  --progress: 0;
+}
+
+
+
+/* btn 3 */
+.btn-3,
+.btn-3 *,
+.btn-3 :after,
+.btn-3 :before,
+.btn-3:after,
+.btn-3:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-3 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-3:disabled {
+  cursor: default;
+}
+.btn-3:-moz-focusring {
+  outline: auto;
+}
+.btn-3 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-3 [hidden] {
+  display: none;
+}
+.btn-3 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-3 span {
+  mix-blend-mode: difference;
+}
+.btn-3:before {
+  background: #fff;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateY(var(--progress, -100%));
+  transition: transform 0.2s ease;
+}
+.btn-3:hover:before {
+  --progress: 0;
+}
+
+
+/* btn 4 */
+.btn-4,
+.btn-4 *,
+.btn-4 :after,
+.btn-4 :before,
+.btn-4:after,
+.btn-4:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-4 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-4:disabled {
+  cursor: default;
+}
+.btn-4:-moz-focusring {
+  outline: auto;
+}
+.btn-4 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-4 [hidden] {
+  display: none;
+}
+.btn-4 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-4 span {
+  mix-blend-mode: difference;
+}
+.btn-4:before {
+  --tilt: 1.2rem;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: calc(100% + var(--tilt));
+}
+.btn-4:hover:before {
+  --progress: 100%;
+}
+
+
+
+
+/* btn 5 */
+.btn-5,
+.btn-5 *,
+.btn-5 :after,
+.btn-5 :before,
+.btn-5:after,
+.btn-5:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-5 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-5:disabled {
+  cursor: default;
+}
+.btn-5:-moz-focusring {
+  outline: auto;
+}
+.btn-5 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-5 [hidden] {
+  display: none;
+}
+.btn-5 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-5 span {
+  mix-blend-mode: difference;
+}
+.btn-5:before {
+  --tilt: 1.2rem;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: calc(100% + var(--tilt));
+}
+.btn-5:hover:before {
+  --progress: 100%;
+}
+
+
+
+/* btn 6 */
+.btn-6,
+.btn-6 *,
+.btn-6 :after,
+.btn-6 :before,
+.btn-6:after,
+.btn-6:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-6 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-6:disabled {
+  cursor: default;
+}
+.btn-6:-moz-focusring {
+  outline: auto;
+}
+.btn-6 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-6 [hidden] {
+  display: none;
+}
+.btn-6 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-6 span {
+  mix-blend-mode: difference;
+}
+.btn-6:after,
+.btn-6:before {
+  background: #fff;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateX(var(--progress, -100%));
+  transition: transform 0.2s ease;
+}
+.btn-6:after {
+  transform: translateX(var(--progress, 100%));
+  z-index: -1;
+}
+.btn-6:hover {
+  --progress: 0;
+}
+
+
+
+
+/* btn 7 */
+.btn-7,
+.btn-7 *,
+.btn-7 :after,
+.btn-7 :before,
+.btn-7:after,
+.btn-7:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-7 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-7:disabled {
+  cursor: default;
+}
+.btn-7:-moz-focusring {
+  outline: auto;
+}
+.btn-7 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-7 [hidden] {
+  display: none;
+}
+.btn-7 {
+  border-radius: 99rem;
+  border-width: 2px;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-7 span {
+  mix-blend-mode: difference;
+}
+.btn-7:before {
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 calc(var(--progress, 100%) / 2),
+    100% calc(var(--progress, 100%) / 2),
+    100% calc(100% - var(--progress, 100%) / 2),
+    0 calc(100% - var(--progress, 100%) / 2)
+  );
+  clip-path: polygon(
+    0 calc(var(--progress, 100%) / 2),
+    100% calc(var(--progress, 100%) / 2),
+    100% calc(100% - var(--progress, 100%) / 2),
+    0 calc(100% - var(--progress, 100%) / 2)
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+}
+.btn-7:hover:before {
+  --progress: 0%;
+}
+
+
+
+/* btn 8 */
+.btn-8,
+.btn-8 *,
+.btn-8 :after,
+.btn-8 :before,
+.btn-8:after,
+.btn-8:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-8 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-8:disabled {
+  cursor: default;
+}
+.btn-8:-moz-focusring {
+  outline: auto;
+}
+.btn-8 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-8 [hidden] {
+  display: none;
+}
+.btn-8 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-8 span {
+  mix-blend-mode: difference;
+}
+.btn-8:after,
+.btn-8:before {
+  --tilt: 1.2rem;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: calc(100% + var(--tilt));
+}
+.btn-8:after {
+  left: 100%;
+  transform: translateX(var(--progress, 0)) rotate(180deg);
+  z-index: -1;
+}
+.btn-8:hover:before {
+  --progress: 100%;
+}
+.btn-8:hover:after {
+  --progress: -100%;
+}
+
+
+
+
+/* btn 9 */
+.btn-9,
+.btn-9 *,
+.btn-9 :after,
+.btn-9 :before,
+.btn-9:after,
+.btn-9:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-9 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-9:disabled {
+  cursor: default;
+}
+.btn-9:-moz-focusring {
+  outline: auto;
+}
+.btn-9 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-9 [hidden] {
+  display: none;
+}
+.btn-9 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-9 span {
+  mix-blend-mode: difference;
+}
+.btn-9:after,
+.btn-9:before {
+  --tilt: 1.2rem;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  transform: translateX(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: calc(100% + var(--tilt));
+}
+.btn-9:after {
+  left: 100%;
+  transform: translateX(var(--progress, 0)) rotate(180deg);
+  z-index: -1;
+}
+.btn-9:hover:before {
+  --progress: 100%;
+}
+.btn-9:hover:after {
+  --progress: -100%;
+}
+
+
+
+
+/* btn 10 */
+.btn-10,
+.btn-10 *,
+.btn-10 :after,
+.btn-10 :before,
+.btn-10:after,
+.btn-10:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-10 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-10:disabled {
+  cursor: default;
+}
+.btn-10:-moz-focusring {
+  outline: auto;
+}
+.btn-10 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-10 [hidden] {
+  display: none;
+}
+.btn-10 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-10 span {
+  mix-blend-mode: difference;
+}
+.btn-10:before {
+  background: #fff;
+  content: "";
+  display: block;
+  height: var(--height, 1em);
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateX(var(--progress, -100%));
+  transition: transform 0.2s ease, height 0.2s ease;
+  width: 100%;
+}
+.btn-10:hover:before {
+  --progress: 0;
+}
+.btn-10:active:before {
+  --height: 100%;
+}
+
+/* btn 11 */
+.btn-11,
+.btn-11 *,
+.btn-11 :after,
+.btn-11 :before,
+.btn-11:after,
+.btn-11:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-11 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-11:disabled {
+  cursor: default;
+}
+.btn-11:-moz-focusring {
+  outline: auto;
+}
+.btn-11 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-11 [hidden] {
+  display: none;
+}
+.btn-11 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-11 span {
+  mix-blend-mode: difference;
+}
+.btn-11:before {
+  -webkit-animation: bg-scroll 3s linear infinite;
+  animation: bg-scroll 3s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  background: repeating-linear-gradient(
+    45deg,
+    hsla(0, 0%, 100%, 0.2),
+    hsla(0, 0%, 100%, 0.2) 0.7%,
+    transparent 0,
+    transparent 4%
+  );
+  content: "";
+  display: block;
+  height: 300%;
+  left: -100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: opacity 0.3s, background-color 0.2s;
+  width: 300%;
+}
+.btn-11:hover:before {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+}
+.btn-11:active:before {
+  background-color: #fff;
+}
+@-webkit-keyframes bg-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(33%);
+  }
+}
+@keyframes bg-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(33%);
+  }
+}
+
+
+/* btn 12 */
+.btn-12,
+.btn-12 *,
+.btn-12 :after,
+.btn-12 :before,
+.btn-12:after,
+.btn-12:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-12 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-12:disabled {
+  cursor: default;
+}
+.btn-12:-moz-focusring {
+  outline: auto;
+}
+.btn-12 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-12 [hidden] {
+  display: none;
+}
+.btn-12 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-12 span {
+  mix-blend-mode: difference;
+}
+.btn-12:after,
+.btn-12:before {
+  background: linear-gradient(
+    90deg,
+    #fff 25%,
+    transparent 0,
+    transparent 50%,
+    #fff 0,
+    #fff 75%,
+    transparent 0
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateY(var(--progress, 100%));
+  transition: transform 0.2s ease;
+}
+.btn-12:after {
+  --progress: -100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 25%,
+    #fff 0,
+    #fff 50%,
+    transparent 0,
+    transparent 75%,
+    #fff 0
+  );
+  z-index: -1;
+}
+.btn-12:hover:after,
+.btn-12:hover:before {
+  --progress: 0;
+}
+
+
+/* btn 13 */
+.btn-13,
+.btn-13 *,
+.btn-13 :after,
+.btn-13 :before,
+.btn-13:after,
+.btn-13:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-13 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-13:disabled {
+  cursor: default;
+}
+.btn-13:-moz-focusring {
+  outline: auto;
+}
+.btn-13 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-13 [hidden] {
+  display: none;
+}
+.btn-13 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-13 span {
+  mix-blend-mode: difference;
+  position: relative;
+  z-index: 1;
+}
+.btn-13:after,
+.btn-13:before {
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(var(--progress, 0%) / 2),
+    0 calc(var(--progress, 0%) / 2),
+    0 0,
+    0 calc(100% - var(--progress, 0%) / 2),
+    100% calc(100% - var(--progress, 0%) / 2),
+    100% 100%,
+    0 100%,
+    0 calc(100% - var(--progress, 0%) / 2)
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(var(--progress, 0%) / 2),
+    0 calc(var(--progress, 0%) / 2),
+    0 0,
+    0 calc(100% - var(--progress, 0%) / 2),
+    100% calc(100% - var(--progress, 0%) / 2),
+    100% 100%,
+    0 100%,
+    0 calc(100% - var(--progress, 0%) / 2)
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateX(calc(100% - var(--progress, 0%) / 1.99));
+  transition: transform 0.2s ease, -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, transform 0.2s ease;
+  transition: clip-path 0.2s ease, transform 0.2s ease,
+    -webkit-clip-path 0.2s ease;
+}
+.btn-13:after {
+  transform: translateX(calc(-100% + var(--progress, 0%) / 1.99));
+}
+.btn-13:hover {
+  --progress: 100%;
+}
+
+
+/* btn 14 */
+.btn-14,
+.btn-14 *,
+.btn-14 :after,
+.btn-14 :before,
+.btn-14:after,
+.btn-14:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-14 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-14:disabled {
+  cursor: default;
+}
+.btn-14:-moz-focusring {
+  outline: auto;
+}
+.btn-14 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-14 [hidden] {
+  display: none;
+}
+.btn-14 {
+  background: #fff;
+  border-radius: 99rem;
+  border-width: 2px;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.btn-14 span {
+  mix-blend-mode: difference;
+}
+.btn-14:hover {
+  box-shadow: 0 20px 100px 1px hsla(0, 0%, 100%, 0.2);
+  transform: translateY(-4px);
+  will-change: box-shadow, transform;
+}
+
+
+
+/* btn 15 */
+.btn-15,
+.btn-15 *,
+.btn-15 :after,
+.btn-15 :before,
+.btn-15:after,
+.btn-15:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-15 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-15:disabled {
+  cursor: default;
+}
+.btn-15:-moz-focusring {
+  outline: auto;
+}
+.btn-15 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-15 [hidden] {
+  display: none;
+}
+.btn-15 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+  z-index: 0;
+}
+.btn-15 span {
+  mix-blend-mode: difference;
+}
+.btn-15:after,
+.btn-15:before {
+  --skew: 0.2;
+  background: #fff;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+.btn-15:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+.btn-15:hover:before {
+  --progress: 100%;
+}
+.btn-15:hover:after {
+  --progress: -102%;
+}
+
+
+/* btn 16 */
+.btn-16,
+.btn-16 *,
+.btn-16 :after,
+.btn-16 :before,
+.btn-16:after,
+.btn-16:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-16 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-16:disabled {
+  cursor: default;
+}
+.btn-16:-moz-focusring {
+  outline: auto;
+}
+.btn-16 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-16 [hidden] {
+  display: none;
+}
+.btn-16 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+  z-index: 0;
+}
+.btn-16 span {
+  mix-blend-mode: difference;
+}
+.btn-16:after,
+.btn-16:before {
+  --tilt: 40px;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    calc(100% - var(--tilt)) 50%,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    calc(100% - var(--tilt)) 50%,
+    100% 100%,
+    0 100%
+  );
+  content: "";
+  display: block;
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+.btn-16:after {
+  -webkit-clip-path: polygon(0 0, var(--tilt) 50%, 0 100%, 100% 100%, 100% 0);
+  clip-path: polygon(0 0, var(--tilt) 50%, 0 100%, 100% 100%, 100% 0);
+  left: 100%;
+  z-index: -1;
+}
+.btn-16:hover:before {
+  transform: translateX(calc(50% + var(--tilt)));
+}
+.btn-16:hover:after {
+  transform: translateX(calc(-50% - var(--tilt)));
+}
+
+
+
+/* btn 17 */
+.btn-17,
+.btn-17 *,
+.btn-17 :after,
+.btn-17 :before,
+.btn-17:after,
+.btn-17:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-17 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-17:disabled {
+  cursor: default;
+}
+.btn-17:-moz-focusring {
+  outline: auto;
+}
+.btn-17 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-17 [hidden] {
+  display: none;
+}
+.btn-17 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+.btn-17,
+.btn-17 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+.btn-17 .text-container {
+  display: block;
+  mix-blend-mode: difference;
+}
+.btn-17 .text {
+  display: block;
+  position: relative;
+}
+.btn-17:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.btn-17:after,
+.btn-17:before {
+  --skew: 0.2;
+  background: #fff;
+  content: "";
+  display: block;
+  height: 102%;
+  left: calc(-50% - 50% * var(--skew));
+  pointer-events: none;
+  position: absolute;
+  top: -104%;
+  transform: skew(calc(150deg * var(--skew))) translateY(var(--progress, 0));
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+.btn-17:after {
+  --progress: 0%;
+  left: calc(50% + 50% * var(--skew));
+  top: 102%;
+  z-index: -1;
+}
+.btn-17:hover:before {
+  --progress: 100%;
+}
+.btn-17:hover:after {
+  --progress: -102%;
+}
+
+
+/* btn 18 */
+.btn-18,
+.btn-18 *,
+.btn-18 :after,
+.btn-18 :before,
+.btn-18:after,
+.btn-18:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-18 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-18:disabled {
+  cursor: default;
+}
+.btn-18:-moz-focusring {
+  outline: auto;
+}
+.btn-18 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-18 [hidden] {
+  display: none;
+}
+.btn-18 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+.btn-18,
+.btn-18 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+.btn-18 .text-container {
+  display: block;
+}
+.btn-18 .text {
+  display: block;
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn-18:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.btn-18:after,
+.btn-18:before {
+  --tilt: 20px;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transition: transform 0.6s;
+  width: 100%;
+}
+.btn-18:after {
+  -webkit-clip-path: polygon(
+    var(--tilt) 0,
+    0 50%,
+    var(--tilt) 100%,
+    100% 100%,
+    100% 0
+  );
+  clip-path: polygon(var(--tilt) 0, 0 50%, var(--tilt) 100%, 100% 100%, 100% 0);
+  left: 100%;
+  z-index: -1;
+}
+.btn-18:hover:before {
+  transform: translateX(100%);
+}
+.btn-18:hover:after {
+  transform: translateX(-100%);
+}
+
+
+
+/* btn 19 */
+.btn-19,
+.btn-19 *,
+.btn-19 :after,
+.btn-19 :before,
+.btn-19:after,
+.btn-19:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-19 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-19:disabled {
+  cursor: default;
+}
+.btn-19:-moz-focusring {
+  outline: auto;
+}
+.btn-19 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-19 [hidden] {
+  display: none;
+}
+.btn-19 {
+  border-radius: 99rem;
+  border-width: 2px;
+  padding: 0.8rem 3rem;
+  z-index: 0;
+}
+.btn-18 .text-container,
+.btn-19 {
+  overflow: hidden;
+  position: relative;
+}
+.btn-18 .text-container {
+  display: block;
+}
+.btn-18 .text {
+  display: block;
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn-18:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.btn-19 span {
+  mix-blend-mode: difference;
+}
+.btn-19 .text-container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.btn-19 .text {
+  display: block;
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn-19:hover .text {
+  -webkit-animation: move-up-alternate 0.3s forwards;
+  animation: move-up-alternate 0.3s forwards;
+}
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.btn-19:after,
+.btn-19:before {
+  background: linear-gradient(
+    90deg,
+    #fff 25%,
+    transparent 0,
+    transparent 50%,
+    #fff 0,
+    #fff 75%,
+    transparent 0
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translateY(var(--progress, 100%));
+  transition: transform 0.2s ease;
+}
+.btn-19:after {
+  --progress: -100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0,
+    transparent 25%,
+    #fff 0,
+    #fff 50%,
+    transparent 0,
+    transparent 75%,
+    #fff 0
+  );
+  z-index: -1;
+}
+.btn-19:hover:after,
+.btn-19:hover:before {
+  --progress: 0;
+}
+
+
+
+/* btn 20 */
+.btn-20,
+.btn-20 *,
+.btn-20 :after,
+.btn-20 :before,
+.btn-20:after,
+.btn-20:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-20 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-20:disabled {
+  cursor: default;
+}
+.btn-20:-moz-focusring {
+  outline: auto;
+}
+.btn-20 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-20 [hidden] {
+  display: none;
+}
+.btn-20 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-20 span {
+  mix-blend-mode: difference;
+}
+.btn-20:before {
+  background: #fff;
+  content: "";
+  display: block;
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transform: skew(0deg) translateX(-20%);
+  transition: transform 0.2s ease;
+  width: 120%;
+}
+.btn-20:hover:before {
+  transform: skew(45deg) translateX(75%);
+}
+
+
+/* btn 21 */
+.btn-21,
+.btn-21 *,
+.btn-21 :after,
+.btn-21 :before,
+.btn-21:after,
+.btn-21:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-21 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-21:disabled {
+  cursor: default;
+}
+.btn-21:-moz-focusring {
+  outline: auto;
+}
+.btn-21 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-21 [hidden] {
+  display: none;
+}
+.btn-21 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-21 span {
+  mix-blend-mode: difference;
+}
+.btn-21:before {
+  -webkit-animation: move-out 0.3s;
+  animation: move-out 0.3s;
+  background: #fff;
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  will-change: transform;
+}
+.btn-21:hover:before {
+  -webkit-animation: move-in 0.3s forwards;
+  animation: move-in 0.3s forwards;
+}
+@-webkit-keyframes move-in {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes move-in {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes move-out {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+@keyframes move-out {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+
+
+
+/* btn 22 */
+.btn-22,
+.btn-22 *,
+.btn-22 :after,
+.btn-22 :before,
+.btn-22:after,
+.btn-22:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-22 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-22:disabled {
+  cursor: default;
+}
+.btn-22:-moz-focusring {
+  outline: auto;
+}
+.btn-22 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-22 [hidden] {
+  display: none;
+}
+.btn-22 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-22 span {
+  mix-blend-mode: difference;
+}
+.btn-22:before {
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  left: -100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) scale(1);
+  transform-origin: left center;
+  transition: transform 0.2s ease;
+  width: 100%;
+}
+.btn-22:hover:before {
+  transform: translateY(-50%) scale(2);
+}
+
+
+
+/* btn 23 */
+.btn-23,
+.btn-23 *,
+.btn-23 :after,
+.btn-23 :before,
+.btn-23:after,
+.btn-23:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-23 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-23:disabled {
+  cursor: default;
+}
+.btn-23:-moz-focusring {
+  outline: auto;
+}
+.btn-23 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-23 [hidden] {
+  display: none;
+}
+.btn-23 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-23 span {
+  display: grid;
+  inset: 0;
+  place-items: center;
+  position: absolute;
+  transition: opacity 0.2s ease;
+}
+.btn-23 .marquee {
+  --spacing: 5em;
+  --start: 0em;
+  --end: 5em;
+  -webkit-animation: marquee 1s linear infinite;
+  animation: marquee 1s linear infinite;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  opacity: 0;
+  position: relative;
+  text-shadow: #fff var(--spacing) 0, #fff calc(var(--spacing) * -1) 0,
+    #fff calc(var(--spacing) * -2) 0;
+}
+.btn-23:hover .marquee {
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  opacity: 1;
+}
+.btn-23:hover .text {
+  opacity: 0;
+}
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(var(--start));
+  }
+  to {
+    transform: translateX(var(--end));
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(var(--start));
+  }
+  to {
+    transform: translateX(var(--end));
+  }
+}
+
+
+
+/* btn 24 */
+.btn-24,
+.btn-24 *,
+.btn-24 :after,
+.btn-24 :before,
+.btn-24:after,
+.btn-24:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-24 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-24:disabled {
+  cursor: default;
+}
+.btn-24:-moz-focusring {
+  outline: auto;
+}
+.btn-24 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-24 [hidden] {
+  display: none;
+}
+.btn-24 {
+  --background: #000;
+  background: none;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-24 span {
+  display: block;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+.btn-24:after,
+.btn-24:before {
+  --tilt: 20px;
+  background: #fff;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  width: 100%;
+  z-index: -1;
+}
+.btn-24:after {
+  --thickness: 5px;
+  background: var(--background);
+  height: calc(100% - var(--thickness) * 2);
+  left: var(--thickness);
+  top: var(--thickness);
+  width: calc(100% - var(--thickness) * 2);
+}
+.btn-24:hover span {
+  transform: translateX(-20px);
+}
+.btn-24:hover:after,
+.btn-24:hover:before {
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+}
+
+
+
+/* btn 25 */
+.btn-25,
+.btn-25 *,
+.btn-25 :after,
+.btn-25 :before,
+.btn-25:after,
+.btn-25:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-25 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-25:disabled {
+  cursor: default;
+}
+.btn-25:-moz-focusring {
+  outline: auto;
+}
+.btn-25 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-25 [hidden] {
+  display: none;
+}
+.btn-25 {
+  --background: #000;
+  background: none;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-25 span {
+  display: block;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+.btn-25:after,
+.btn-25:before {
+  --tilt: 20px;
+  background: #fff;
+  -webkit-clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 50%, 0 0, 100% 0, 100% 50%, 100% 100%, 0 100%);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+  width: 100%;
+  z-index: -1;
+}
+.btn-25:after {
+  --thickness: 5px;
+  background: var(--background);
+  height: calc(100% - var(--thickness) * 2);
+  left: var(--thickness);
+  top: var(--thickness);
+  width: calc(100% - var(--thickness) * 2);
+}
+.btn-25:hover:after,
+.btn-25:hover:before {
+  -webkit-clip-path: polygon(
+    0 50%,
+    var(--tilt) 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    var(--tilt) 100%
+  );
+  clip-path: polygon(
+    0 50%,
+    var(--tilt) 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    var(--tilt) 100%
+  );
+}
+
+
+
+/* btn 26 */
+.btn-26,
+.btn-26 *,
+.btn-26 :after,
+.btn-26 :before,
+.btn-26:after,
+.btn-26:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-26 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-26:disabled {
+  cursor: default;
+}
+.btn-26:-moz-focusring {
+  outline: auto;
+}
+.btn-26 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-26 [hidden] {
+  display: none;
+}
+.btn-26 {
+  background: none;
+  -webkit-mask-image: none;
+  padding: 1rem 3rem;
+  position: relative;
+}
+.btn-26 span {
+  mix-blend-mode: difference;
+}
+.btn-26:after,
+.btn-26:before {
+  --progress: 0%;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 50%,
+    var(--progress) 0,
+    100% 0,
+    calc(100% - var(--progress)) 50%,
+    100% 100%,
+    var(--progress) 100%
+  );
+  clip-path: polygon(
+    0 50%,
+    var(--progress) 0,
+    100% 0,
+    calc(100% - var(--progress)) 50%,
+    100% 100%,
+    var(--progress) 100%
+  );
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: height 0.4s, transform 0.4s, -webkit-clip-path 0.4s 0.1s;
+  transition: height 0.4s, transform 0.4s, clip-path 0.4s 0.1s;
+  transition: height 0.4s, transform 0.4s, clip-path 0.4s 0.1s,
+    -webkit-clip-path 0.4s 0.1s;
+  width: 100%;
+  z-index: -1;
+}
+.btn-26:after {
+  transform: rotate(180deg) translateY(50%);
+}
+.btn-26:hover:before {
+  --progress: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(35%);
+}
+.btn-26:hover:after {
+  --progress: 50%;
+  top: 50%;
+  transform: rotate(180deg) translateY(50%) translateX(35%);
+}
+
+
+
+/* btn 27 */
+.btn-27,
+.btn-27 *,
+.btn-27 :after,
+.btn-27 :before,
+.btn-27:after,
+.btn-27:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-27 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-27:disabled {
+  cursor: default;
+}
+.btn-27:-moz-focusring {
+  outline: auto;
+}
+.btn-27 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-27 [hidden] {
+  display: none;
+}
+.btn-27 {
+  --tilt: 40deg;
+  background: none;
+  -webkit-mask-image: none;
+  padding: 2rem 5rem;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+.btn-27 .text-container {
+  background: #fff;
+  display: grid;
+  inset: 0;
+  place-items: center;
+  position: absolute;
+  transform-origin: center center;
+  transition: transform 0.2s;
+}
+.btn-27 .text {
+  color: #000;
+}
+.btn-27:hover .text-container:first-child {
+  transform: rotateY(var(--tilt));
+}
+.btn-27:hover .text-container:nth-child(2) {
+  transform: rotateY(calc(var(--tilt) * -1));
+}
+
+
+
+/* btn 28 */
+.btn-28,
+.btn-28 *,
+.btn-28 :after,
+.btn-28 :before,
+.btn-28:after,
+.btn-28:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-28 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-28:disabled {
+  cursor: default;
+}
+.btn-28:-moz-focusring {
+  outline: auto;
+}
+.btn-28 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-28 [hidden] {
+  display: none;
+}
+.btn-28 {
+  --tilt: 40deg;
+  color: #000;
+  -webkit-mask-image: none;
+  padding: 2rem 5rem;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+.btn-28 .text-container {
+  background: #fff;
+  display: grid;
+  inset: 0;
+  place-items: center;
+  position: absolute;
+  transform-origin: center center;
+  transition: transform 0.2s;
+}
+.btn-28:hover .text-container {
+  transform: rotateY(var(--tilt));
+}
+.btn-28:hover .text-container:nth-child(2) {
+  transform: none;
+}
+
+
+
+
+/* btn 29 */
+.btn-29,
+.btn-29 *,
+.btn-29 :after,
+.btn-29 :before,
+.btn-29:after,
+.btn-29:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-29 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-29:disabled {
+  cursor: default;
+}
+.btn-29:-moz-focusring {
+  outline: auto;
+}
+.btn-29 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-29 [hidden] {
+  display: none;
+}
+.btn-29 {
+  --tilt: 30px;
+  border-width: 1px;
+  display: grid;
+  padding: 1.2rem 3rem;
+  place-content: center;
+}
+.btn-29,
+.btn-29 .text-container {
+  overflow: hidden;
+  position: relative;
+}
+.btn-29 .text-container {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.btn-29 .text {
+  display: block;
+  font-weight: 900;
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn-29:hover .text {
+  -webkit-animation: move-right-alternate 0.3s ease forwards;
+  animation: move-right-alternate 0.3s ease forwards;
+}
+@-webkit-keyframes move-right-alternate {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80%);
+  }
+  51% {
+    transform: translateX(-80%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes move-right-alternate {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(80%);
+  }
+  51% {
+    transform: translateX(-80%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.btn-29:before {
+  -webkit-animation: move-out 0.3s ease;
+  animation: move-out 0.3s ease;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 50%,
+    calc(100% - var(--tilt)) 100%,
+    0 100%
+  );
+  content: "";
+  height: 100%;
+  left: calc(-100% - var(--tilt));
+  position: absolute;
+  top: 0;
+  width: calc(100% + var(--tilt));
+}
+.btn-29:hover:before {
+  -webkit-animation: move-in 0.3s ease forwards;
+  animation: move-in 0.3s ease forwards;
+}
+@-webkit-keyframes move-in {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@keyframes move-in {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+@-webkit-keyframes move-out {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+@keyframes move-out {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+
+
+
+/* btn 30 */
+.btn-30,
+.btn-30 *,
+.btn-30 :after,
+.btn-30 :before,
+.btn-30:after,
+.btn-30:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-30 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-30:disabled {
+  cursor: default;
+}
+.btn-30:-moz-focusring {
+  outline: auto;
+}
+.btn-30 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-30 [hidden] {
+  display: none;
+}
+.btn-30 {
+  border-radius: 999px;
+  border-width: 1px;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+}
+.btn-30 span {
+  mix-blend-mode: difference;
+}
+.btn-30:before {
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  top: -200%;
+  transform: translateX(-50%);
+  transition: height 0.3s;
+}
+.btn-30:hover:before {
+  height: 400%;
+}
+.btn-30 .text-container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.btn-30 .text {
+  display: block;
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn-30:hover .text {
+  -webkit-animation: move-up-alternate 0.3s ease forwards;
+  animation: move-up-alternate 0.3s ease forwards;
+}
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+/* btn 31 */
+.btn-31,
+.btn-31 *,
+.btn-31 :after,
+.btn-31 :before,
+.btn-31:after,
+.btn-31:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-31 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-31:disabled {
+  cursor: default;
+}
+.btn-31:-moz-focusring {
+  outline: auto;
+}
+.btn-31 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-31 [hidden] {
+  display: none;
+}
+.btn-31 {
+  border-width: 1px;
+  padding: 1rem 2rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-31:before {
+  --progress: 100%;
+  background: #fff;
+  -webkit-clip-path: polygon(
+    100% 0,
+    var(--progress) var(--progress),
+    0 100%,
+    100% 100%
+  );
+  clip-path: polygon(
+    100% 0,
+    var(--progress) var(--progress),
+    0 100%,
+    100% 100%
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+}
+.btn-31:hover:before {
+  --progress: 0%;
+}
+.btn-31 .text-container {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.btn-31 .text {
+  display: block;
+  font-weight: 900;
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn-31:hover .text {
+  -webkit-animation: move-up-alternate 0.3s ease forwards;
+  animation: move-up-alternate 0.3s ease forwards;
+}
+@-webkit-keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes move-up-alternate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  51% {
+    transform: translateY(-80%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* btn 32 */
+.btn-32,
+.btn-32 *,
+.btn-32 :after,
+.btn-32 :before,
+.btn-32:after,
+.btn-32:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-32 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-32:disabled {
+  cursor: default;
+}
+.btn-32:-moz-focusring {
+  outline: auto;
+}
+.btn-32 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-32 [hidden] {
+  display: none;
+}
+.btn-32 {
+  background: #fff;
+  border-color: #000;
+  color: #000;
+  -webkit-mask-image: none;
+  outline: 1px solid #fff;
+  padding: 20px 45px;
+  transition: border-width 0.2s;
+}
+.btn-32:hover {
+  border-width: 8px;
+}
+
+
+
+
+/* btn 34 */
+.btn-34,
+.btn-34 *,
+.btn-34 :after,
+.btn-34 :before,
+.btn-34:after,
+.btn-34:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-34 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+  text-transform: uppercase;
+}
+.btn-34:disabled {
+  cursor: default;
+}
+.btn-34:-moz-focusring {
+  outline: auto;
+}
+.btn-34 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-34 [hidden] {
+  display: none;
+}
+.btn-34 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+}
+.btn-34:hover {
+  transform: scale(1.1);
+}
+.btn-34 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-34:before {
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s;
+  width: 0;
+}
+.btn-34:hover:before {
+  width: 100%;
+}
+
+
+
+
+/* btn 35 */
+.btn-35,
+.btn-35 *,
+.btn-35 :after,
+.btn-35 :before,
+.btn-35:after,
+.btn-35:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-35 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-35:disabled {
+  cursor: default;
+}
+.btn-35:-moz-focusring {
+  outline: auto;
+}
+.btn-35 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-35 [hidden] {
+  display: none;
+}
+.btn-35 {
+  --height: 4rem;
+  border: 1px solid;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: var(--height);
+  overflow: hidden;
+  padding: 0 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-35 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-35:before {
+  --middle: calc(var(--height) / 2);
+  background: #fff;
+  content: "";
+  height: 100%;
+  left: calc(var(--height) * -1);
+  position: absolute;
+  top: 0;
+  transform: rotate(-90deg);
+  transform-origin: var(--middle) var(--middle);
+  transition: transform 0.3s;
+  width: calc(100% + var(--height));
+  z-index: -1;
+}
+.btn-35:hover:before {
+  transform: rotate(0deg);
+}
+
+
+
+
+/* btn 36 */
+.btn-36,
+.btn-36 *,
+.btn-36 :after,
+.btn-36 :before,
+.btn-36:after,
+.btn-36:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-36 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-36:disabled {
+  cursor: default;
+}
+.btn-36:-moz-focusring {
+  outline: auto;
+}
+.btn-36 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-36 [hidden] {
+  display: none;
+}
+.btn-36 {
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 1.1rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-36 .new,
+.btn-36 .old span {
+  font-weight: 900;
+  transition: transform 0.2s;
+}
+.btn-36 .new {
+  display: block;
+  transform: scale(0);
+}
+.btn-36:hover .new {
+  transform: scale(1);
+}
+.btn-36 .old,
+.btn-36 .old span {
+  inset: 0;
+  position: absolute;
+}
+.btn-36 .old span {
+  background: #fff;
+  color: #000;
+  display: block;
+  display: grid;
+  place-items: center;
+}
+.btn-36 .old span:first-child {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+}
+.btn-36 .old span:nth-child(2) {
+  -webkit-clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+.btn-36:hover .old span:first-child {
+  transform: translateY(-50%);
+}
+.btn-36:hover .old span:nth-child(2) {
+  transform: translateY(50%);
+}
+
+
+
+
+/* btn 37 */
+.btn-37,
+.btn-37 *,
+.btn-37 :after,
+.btn-37 :before,
+.btn-37:after,
+.btn-37:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-37 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-37:disabled {
+  cursor: default;
+}
+.btn-37:-moz-focusring {
+  outline: auto;
+}
+.btn-37 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-37 [hidden] {
+  display: none;
+}
+.btn-37 {
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 1.1rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-37 .new,
+.btn-37 .old span {
+  font-weight: 900;
+  transition: transform 0.2s;
+}
+.btn-37 .new {
+  display: block;
+  transform: scale(0);
+}
+.btn-37:hover .new {
+  transform: scale(1);
+}
+.btn-37 .old,
+.btn-37 .old span {
+  inset: 0;
+  position: absolute;
+}
+.btn-37 .old span {
+  background: #fff;
+  color: #000;
+  display: block;
+  display: grid;
+  place-items: center;
+}
+.btn-37 .old span:first-child {
+  -webkit-clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+  clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+}
+.btn-37 .old span:nth-child(2) {
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+.btn-37:hover .old span:first-child {
+  transform: translateY(-100%);
+}
+.btn-37:hover .old span:nth-child(2) {
+  transform: translateY(100%);
+}
+
+
+
+/* btn 38 */
+.btn-38,
+.btn-38 *,
+.btn-38 :after,
+.btn-38 :before,
+.btn-38:after,
+.btn-38:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-38 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-38:disabled {
+  cursor: default;
+}
+.btn-38:-moz-focusring {
+  outline: auto;
+}
+.btn-38 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-38 [hidden] {
+  display: none;
+}
+.btn-38 {
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 1.1rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-38 .new,
+.btn-38 .old span {
+  font-weight: 900;
+  transition: transform 0.2s;
+}
+.btn-38 .new {
+  display: block;
+  transform: scale(0);
+}
+.btn-38:hover .new {
+  transform: scale(1);
+}
+.btn-38 .old,
+.btn-38 .old span {
+  inset: 0;
+  position: absolute;
+}
+.btn-38 .old span {
+  background: #fff;
+  color: #000;
+  display: block;
+  display: grid;
+  place-items: center;
+}
+.btn-38 .old span:first-child {
+  -webkit-clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+  clip-path: polygon(0 0, 51% 0, 51% 100%, 0 100%);
+}
+.btn-38 .old span:nth-child(2) {
+  -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+.btn-38:hover .old span:first-child {
+  transform: translateX(-100%);
+}
+.btn-38:hover .old span:nth-child(2) {
+  transform: translateX(100%);
+}
+
+
+
+
+/* btn 39 */
+.btn-39,
+.btn-39 *,
+.btn-39 :after,
+.btn-39 :before,
+.btn-39:after,
+.btn-39:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-39 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-39:disabled {
+  cursor: default;
+}
+.btn-39:-moz-focusring {
+  outline: auto;
+}
+.btn-39 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-39 [hidden] {
+  display: none;
+}
+.btn-39 {
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.1rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-39 .new {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-100%);
+  transition: transform 0.2s;
+}
+.btn-39:hover .new {
+  transform: translateX(0);
+}
+
+
+
+/* btn 40 */
+.btn-40,
+.btn-40 *,
+.btn-40 :after,
+.btn-40 :before,
+.btn-40:after,
+.btn-40:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-40 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-40:disabled {
+  cursor: default;
+}
+.btn-40:-moz-focusring {
+  outline: auto;
+}
+.btn-40 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-40 [hidden] {
+  display: none;
+}
+.btn-40 {
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 2rem 5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-40 .new,
+.btn-40 .old {
+  transition: transform 0.2s;
+}
+.btn-40 .old {
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+}
+.btn-40:hover .old {
+  transform: translateY(100%);
+}
+.btn-40 .new {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  pointer-events: none;
+  position: absolute;
+  transform: translateX(-100%);
+}
+.btn-40:hover .new {
+  transform: translateX(0);
+}
+
+
+
+
+
+/* btn 41 */
+.btn-41,
+.btn-41 *,
+.btn-41 :after,
+.btn-41 :before,
+.btn-41:after,
+.btn-41:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-41 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-41:disabled {
+  cursor: default;
+}
+.btn-41:-moz-focusring {
+  outline: auto;
+}
+.btn-41 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-41 [hidden] {
+  display: none;
+}
+.btn-41 {
+  border: 2px solid #fff;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.1rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-41 span {
+  mix-blend-mode: difference;
+}
+.btn-41:before {
+  background: #fff;
+  border-radius: 999px;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transition: transform 0.2s;
+}
+.btn-41:hover:before {
+  transform: scale(0.7);
+}
+
+
+
+
+/* btn 42 */
+.btn-42,
+.btn-42 *,
+.btn-42 :after,
+.btn-42 :before,
+.btn-42:after,
+.btn-42:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-42 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-42:disabled {
+  cursor: default;
+}
+.btn-42:-moz-focusring {
+  outline: auto;
+}
+.btn-42 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-42 [hidden] {
+  display: none;
+}
+.btn-42 {
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-42 span {
+  mix-blend-mode: difference;
+}
+.btn-42:before {
+  --thickness: 4px;
+  border: var(--thickness) solid #fff;
+  border-radius: 999px;
+  content: "";
+  inset: calc(var(--thickness) * -1);
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(1.3);
+  transition: transform 0.2s, opacity 0.2s;
+}
+.btn-42:hover:before {
+  opacity: 1;
+  transform: scale(1);
+}
+.btn-42:hover {
+  background-color: transparent;
+}
+
+
+
+
+/* btn 43 */
+.btn-43,
+.btn-43 *,
+.btn-43 :after,
+.btn-43 :before,
+.btn-43:after,
+.btn-43:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-43 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-43:disabled {
+  cursor: default;
+}
+.btn-43:-moz-focusring {
+  outline: auto;
+}
+.btn-43 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-43 [hidden] {
+  display: none;
+}
+.btn-43 {
+  border: 1px solid;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 20px 60px;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-43 .new,
+.btn-43 .old {
+  font-weight: 900;
+}
+.btn-43 .new {
+  background: #fff;
+  color: #000;
+  content: "";
+  display: grid;
+  inset: 0;
+  opacity: 0;
+  place-items: center;
+  position: absolute;
+  transform: rotate(90deg) translateY(100%);
+  transform-origin: bottom left;
+  transition: transform 0.2s, opacity 0.2s;
+}
+.btn-43:hover .new {
+  opacity: 1;
+  transform: rotate(0deg) translateY(0);
+}
+.btn-43 .old {
+  transition: opacity 0.2s;
+}
+.btn-43:hover .old {
+  opacity: 0;
+}
+
+
+
+/* btn 44 */
+.btn-44,
+.btn-44 *,
+.btn-44 :after,
+.btn-44 :before,
+.btn-44:after,
+.btn-44:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-44 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-44:disabled {
+  cursor: default;
+}
+.btn-44:-moz-focusring {
+  outline: auto;
+}
+.btn-44 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-44 [hidden] {
+  display: none;
+}
+.btn-44 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-44 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-44:after,
+.btn-44:before {
+  background: #fff;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: -100%;
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+  width: 100%;
+  will-change: transform;
+}
+.btn-44:after {
+  background: #dedede;
+  transition-delay: 0.13s;
+  z-index: -1;
+}
+.btn-44:hover:after,
+.btn-44:hover:before {
+  transform: translateY(100%);
+}
+
+
+
+
+/* btn 45 */
+.btn-45,
+.btn-45 *,
+.btn-45 :after,
+.btn-45 :before,
+.btn-45:after,
+.btn-45:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-45 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-45:disabled {
+  cursor: default;
+}
+.btn-45:-moz-focusring {
+  outline: auto;
+}
+.btn-45 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-45 [hidden] {
+  display: none;
+}
+.btn-45 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-45 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-45:after,
+.btn-45:before {
+  background: #fff;
+  content: "";
+  height: 100%;
+  left: -100%;
+  position: absolute;
+  top: 0;
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+  width: 100%;
+  will-change: transform;
+}
+.btn-45:after {
+  background: #dedede;
+  transition-delay: 0.1s;
+  z-index: -1;
+}
+.btn-45:hover:after,
+.btn-45:hover:before {
+  transform: translateX(100%);
+}
+
+
+
+
+/* btn 46 */
+.btn-46,
+.btn-46 *,
+.btn-46 :after,
+.btn-46 :before,
+.btn-46:after,
+.btn-46:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-46 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-46:disabled {
+  cursor: default;
+}
+.btn-46:-moz-focusring {
+  outline: auto;
+}
+.btn-46 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-46 [hidden] {
+  display: none;
+}
+.btn-46 {
+  background: #fff;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.2rem 3rem;
+  perspective: 800px;
+  position: relative;
+  text-transform: uppercase;
+  transform: rotateX(8deg);
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+}
+.btn-46:before {
+  background: #eee;
+  content: "";
+  display: block;
+  height: 20%;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transform: rotateX(-90deg);
+  transform-origin: 0 0;
+  width: 100%;
+}
+.btn-46:hover {
+  transform: rotateX(25deg);
+}
+
+
+
+
+/* btn 47 */
+.btn-47,
+.btn-47 *,
+.btn-47 :after,
+.btn-47 :before,
+.btn-47:after,
+.btn-47:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-47 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-47:disabled {
+  cursor: default;
+}
+.btn-47:-moz-focusring {
+  outline: auto;
+}
+.btn-47 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-47 [hidden] {
+  display: none;
+}
+.btn-47 {
+  background: #fff;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.2rem 3rem;
+  perspective: 800px;
+  position: relative;
+  text-transform: uppercase;
+  transform: rotateY(12deg);
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+}
+.btn-47:before {
+  background: #eee;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateY(90deg);
+  transform-origin: 0 0;
+  width: 20%;
+}
+.btn-47:hover {
+  transform: rotateY(20deg);
+}
+
+
+
+
+
+/* btn 48 */
+.btn-48,
+.btn-48 *,
+.btn-48 :after,
+.btn-48 :before,
+.btn-48:after,
+.btn-48:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-48 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-48:disabled {
+  cursor: default;
+}
+.btn-48:-moz-focusring {
+  outline: auto;
+}
+.btn-48 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-48 [hidden] {
+  display: none;
+}
+.btn-48 {
+  background: #fff;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.2rem 3rem;
+  perspective: 800px;
+  position: relative;
+  text-transform: uppercase;
+  transform: rotateY(-11deg);
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+}
+.btn-48:before {
+  background: #eee;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 100%;
+  position: absolute;
+  top: 0;
+  transform: rotateY(90deg);
+  transform-origin: 0 0;
+  width: 20%;
+}
+.btn-48:hover {
+  transform: rotateY(-21deg);
+}
+
+
+
+/* btn 49 */
+.btn-49,
+.btn-49 *,
+.btn-49 :after,
+.btn-49 :before,
+.btn-49:after,
+.btn-49:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-49 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-49:disabled {
+  cursor: default;
+}
+.btn-49:-moz-focusring {
+  outline: auto;
+}
+.btn-49 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-49 [hidden] {
+  display: none;
+}
+.btn-49 {
+  background: #fff;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.2rem 3rem;
+  perspective: 800px;
+  position: relative;
+  text-transform: uppercase;
+  transform: rotateX(-8deg);
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+}
+.btn-49:before {
+  background: #eee;
+  content: "";
+  display: block;
+  height: 20%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateX(-90deg);
+  transform-origin: 0 0;
+  width: 100%;
+}
+.btn-49:hover {
+  transform: rotateX(-25deg);
+}
+
+
+
+/* btn 50 */
+.btn-50,
+.btn-50 *,
+.btn-50 :after,
+.btn-50 :before,
+.btn-50:after,
+.btn-50:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-50 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-50:disabled {
+  cursor: default;
+}
+.btn-50:-moz-focusring {
+  outline: auto;
+}
+.btn-50 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-50 [hidden] {
+  display: none;
+}
+.btn-50 {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px 2px #eee;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 20px 60px;
+  perspective: 800px;
+  position: relative;
+  text-transform: uppercase;
+  transform: rotateX(32deg);
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+}
+.btn-50:hover {
+  transform: rotateX(38deg) translateY(7px);
+}
+.btn-50:before {
+  background: hsla(0, 0%, 100%, 0.3);
+  content: "";
+  filter: blur(80px);
+  height: 400%;
+  left: -50%;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  transform: translateY(50px);
+  width: 200%;
+}
+
+
+
+
+/* btn 51 */
+.btn-51,
+.btn-51 *,
+.btn-51 :after,
+.btn-51 :before,
+.btn-51:after,
+.btn-51:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-51 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-51:disabled {
+  cursor: default;
+}
+.btn-51:-moz-focusring {
+  outline: auto;
+}
+.btn-51 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-51 [hidden] {
+  display: none;
+}
+.btn-51 {
+  --progress: 15px;
+  background: #fff;
+  bottom: var(--progress);
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.2rem 3rem;
+  perspective: 800px;
+  position: relative;
+  text-transform: uppercase;
+  transform: rotateX(55deg) rotate(25deg);
+  transform-style: preserve-3d;
+  transition: bottom 0.2s;
+}
+.btn-51:after,
+.btn-51:before {
+  content: "";
+  display: block;
+  position: absolute;
+  transform-origin: 0 0;
+}
+.btn-51:before {
+  background: #eee;
+  height: var(--progress);
+  left: 0;
+  top: 100%;
+  transform: rotateX(-90deg);
+  transition: height 0.2s;
+  width: 100%;
+}
+.btn-51:after {
+  background: #ccc;
+  height: 100%;
+  left: 100%;
+  top: 0;
+  transform: rotateY(90deg);
+  transition: width 0.2s;
+  width: var(--progress);
+}
+.btn-51:active {
+  --progress: 0px;
+}
+
+
+
+/* btn 52 */
+.btn-52,
+.btn-52 *,
+.btn-52 :after,
+.btn-52 :before,
+.btn-52:after,
+.btn-52:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-52 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-52:disabled {
+  cursor: default;
+}
+.btn-52:-moz-focusring {
+  outline: auto;
+}
+.btn-52 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-52 [hidden] {
+  display: none;
+}
+.btn-52 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-52 .original {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s;
+}
+.btn-52:hover .original {
+  transform: translateY(100%);
+}
+.btn-52 .letters {
+  display: inline-flex;
+}
+.btn-52 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s, opacity 0.2s;
+}
+.btn-52:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+.btn-52:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.btn-52:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.btn-52:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.btn-52:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+.btn-52:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+
+
+
+
+/* btn 53 */
+.btn-53,
+.btn-53 *,
+.btn-53 :after,
+.btn-53 :before,
+.btn-53:after,
+.btn-53:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-53 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-53:disabled {
+  cursor: default;
+}
+.btn-53:-moz-focusring {
+  outline: auto;
+}
+.btn-53 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-53 [hidden] {
+  display: none;
+}
+.btn-53 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-53 .original {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-content: center;
+  position: absolute;
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1);
+}
+.btn-53:hover .original {
+  transform: translateY(100%);
+}
+.btn-53 .letters {
+  display: inline-flex;
+}
+.btn-53 span {
+  opacity: 0;
+  transform: translateY(-15px);
+  transition: transform 0.2s cubic-bezier(0.87, 0, 0.13, 1), opacity 0.2s;
+}
+.btn-53 span:nth-child(2n) {
+  transform: translateY(15px);
+}
+.btn-53:hover span {
+  opacity: 1;
+  transform: translateY(0);
+}
+.btn-53:hover span:nth-child(2) {
+  transition-delay: 0.1s;
+}
+.btn-53:hover span:nth-child(3) {
+  transition-delay: 0.2s;
+}
+.btn-53:hover span:nth-child(4) {
+  transition-delay: 0.3s;
+}
+.btn-53:hover span:nth-child(5) {
+  transition-delay: 0.4s;
+}
+.btn-53:hover span:nth-child(6) {
+  transition-delay: 0.5s;
+}
+
+
+
+
+/* btn 54 */
+.btn-54,
+.btn-54 *,
+.btn-54 :after,
+.btn-54 :before,
+.btn-54:after,
+.btn-54:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-54 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-54:disabled {
+  cursor: default;
+}
+.btn-54:-moz-focusring {
+  outline: auto;
+}
+.btn-54 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-54 [hidden] {
+  display: none;
+}
+.btn-54 {
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  padding: 1.8rem 5rem;
+  position: relative;
+  text-transform: uppercase;
+  background: none;
+}
+.btn-54 .content,
+.btn-54 .depth,
+.btn-54 .shadow {
+  transition: transform 0.2s;
+}
+.btn-54 .content {
+  background: #fff;
+  color: #000;
+  display: grid;
+  height: 84%;
+  left: 0;
+  place-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.btn-54 .depth {
+  background: #ccc;
+  height: 10%;
+  top: 84%;
+}
+.btn-54 .depth,
+.btn-54 .shadow {
+  display: block;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.btn-54 .shadow {
+  background: #777;
+  height: 6%;
+  top: 94%;
+}
+.btn-54:hover .content {
+  transform: translateY(4%);
+}
+.btn-54:hover .shadow {
+  transform: translateY(-20%);
+}
+.btn-54:active .content {
+  transform: translateY(8%);
+}
+.btn-54:active .shadow {
+  transform: translateY(-30%);
+}
+
+
+/* btn 55 */
+.btn-55,
+.btn-55 *,
+.btn-55 :after,
+.btn-55 :before,
+.btn-55:after,
+.btn-55:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-55 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-55:disabled {
+  cursor: default;
+}
+.btn-55:-moz-focusring {
+  outline: auto;
+}
+.btn-55 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-55 [hidden] {
+  display: none;
+}
+.btn-55 {
+  background: linear-gradient(90deg, blue, red);
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.8rem 5rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-55 span {
+  background: #1e293b;
+  border-radius: 999px;
+  color: #fff;
+  display: grid;
+  inset: 5px;
+  place-items: center;
+  position: absolute;
+  transition: background 0.3s;
+}
+.btn-55:hover span {
+  background: none;
+}
+
+
+
+
+/* btn 56 */
+.btn-56,
+.btn-56 *,
+.btn-56 :after,
+.btn-56 :before,
+.btn-56:after,
+.btn-56:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-56 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-56:disabled {
+  cursor: default;
+}
+.btn-56:-moz-focusring {
+  outline: auto;
+}
+.btn-56 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-56 [hidden] {
+  display: none;
+}
+.btn-56 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-56:hover {
+  -webkit-animation: pulse 0.5s;
+  animation: pulse 0.5s;
+  box-shadow: 0 0 0 2em transparent;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+
+
+
+
+/* btn 57 */
+.btn-57,
+.btn-57 *,
+.btn-57 :after,
+.btn-57 :before,
+.btn-57:after,
+.btn-57:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-57 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-57:disabled {
+  cursor: default;
+}
+.btn-57:-moz-focusring {
+  outline: auto;
+}
+.btn-57 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-57 [hidden] {
+  display: none;
+}
+.btn-57 {
+  background: none;
+  border: 3px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 20px 60px;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-57:before {
+  background: #fff;
+  border-radius: 999px;
+  content: "";
+  inset: 0;
+  position: absolute;
+  transform: translate(10px, 10px);
+  transition: transform 0.2s;
+  z-index: -1;
+}
+.btn-57:hover:before {
+  transform: translate(0);
+}
+
+
+
+/* btn 58 */
+.btn-58,
+.btn-58 *,
+.btn-58 :after,
+.btn-58 :before,
+.btn-58:after,
+.btn-58:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-58 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-58:disabled {
+  cursor: default;
+}
+.btn-58:-moz-focusring {
+  outline: auto;
+}
+.btn-58 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-58 [hidden] {
+  display: none;
+}
+.btn-58 {
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-58:before {
+  background: #fff;
+  border-radius: 999px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.btn-58:after,
+.btn-58:before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  transition: 0.4s;
+  z-index: -1;
+}
+.btn-58:after {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  background: hsla(0, 0%, 100%, 0.2);
+  border-radius: 50%;
+  height: 30px;
+  left: 90%;
+  top: 80%;
+  width: 30px;
+}
+.btn-58:hover:before {
+  height: 90%;
+  left: 5%;
+  top: 10%;
+  width: 90%;
+}
+.btn-58:hover:after {
+  border-radius: 10px;
+  height: 80%;
+  left: 5%;
+  top: 10%;
+  width: 90%;
+}
+
+
+
+
+/* btn 59 */
+.btn-59,
+.btn-59 *,
+.btn-59 :after,
+.btn-59 :before,
+.btn-59:after,
+.btn-59:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-59 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-59:disabled {
+  cursor: default;
+}
+.btn-59:-moz-focusring {
+  outline: auto;
+}
+.btn-59 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-59 [hidden] {
+  display: none;
+}
+.btn-59 {
+  background: none;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.5rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-59 span {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 999px;
+  display: grid;
+  inset: 0;
+  place-items: center;
+  pointer-events: none;
+  position: absolute;
+}
+.btn-59:hover span {
+  -webkit-animation: tada 0.8s;
+  animation: tada 0.8s;
+}
+@-webkit-keyframes tada {
+  0% {
+    transform: scaleX(1);
+  }
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes tada {
+  0% {
+    transform: scaleX(1);
+  }
+  10%,
+  20% {
+    transform: scale3d(0.9, 0.9, 0.9) rotate(-3deg);
+  }
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(3deg);
+  }
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate(-3deg);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+
+/* btn 60 */
+.btn-60,
+.btn-60 *,
+.btn-60 :after,
+.btn-60 :before,
+.btn-60:after,
+.btn-60:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-60 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-60:disabled {
+  cursor: default;
+}
+.btn-60:-moz-focusring {
+  outline: auto;
+}
+.btn-60 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-60 [hidden] {
+  display: none;
+}
+.btn-60 {
+  background: none;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.5rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-60 span {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 999px;
+  display: grid;
+  inset: 0;
+  place-items: center;
+  pointer-events: none;
+  position: absolute;
+}
+.btn-60:hover span {
+  -webkit-animation: jello 0.8s;
+  animation: jello 0.8s;
+}
+@-webkit-keyframes jello {
+  0%,
+  11.1%,
+  to {
+    transform: translateZ(0);
+  }
+  22.2% {
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+  33.3% {
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+  44.4% {
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+  55.5% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+  77.7% {
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+  88.8% {
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+@keyframes jello {
+  0%,
+  11.1%,
+  to {
+    transform: translateZ(0);
+  }
+  22.2% {
+    transform: skewX(-12.5deg) skewY(-12.5deg);
+  }
+  33.3% {
+    transform: skewX(6.25deg) skewY(6.25deg);
+  }
+  44.4% {
+    transform: skewX(-3.125deg) skewY(-3.125deg);
+  }
+  55.5% {
+    transform: skewX(1.5625deg) skewY(1.5625deg);
+  }
+  66.6% {
+    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+  }
+  77.7% {
+    transform: skewX(0.390625deg) skewY(0.390625deg);
+  }
+  88.8% {
+    transform: skewX(-0.1953125deg) skewY(-0.1953125deg);
+  }
+}
+
+
+
+
+
+/* btn 61 */
+.btn-61,
+.btn-61 *,
+.btn-61 :after,
+.btn-61 :before,
+.btn-61:after,
+.btn-61:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-61 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-61:disabled {
+  cursor: default;
+}
+.btn-61:-moz-focusring {
+  outline: auto;
+}
+.btn-61 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-61 [hidden] {
+  display: none;
+}
+.btn-61 {
+  background: none;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.5rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-61 span {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 999px;
+  display: grid;
+  inset: 0;
+  place-items: center;
+  pointer-events: none;
+  position: absolute;
+}
+.btn-61:hover span {
+  -webkit-animation: rubberBand 0.8s;
+  animation: rubberBand 0.8s;
+}
+@-webkit-keyframes rubberBand {
+  0% {
+    transform: scaleX(1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes rubberBand {
+  0% {
+    transform: scaleX(1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+
+
+
+/* btn 62 */
+.btn-62,
+.btn-62 *,
+.btn-62 :after,
+.btn-62 :before,
+.btn-62:after,
+.btn-62:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-62 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-62:disabled {
+  cursor: default;
+}
+.btn-62:-moz-focusring {
+  outline: auto;
+}
+.btn-62 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-62 [hidden] {
+  display: none;
+}
+.btn-62 {
+  background: none;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.5rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-62 span {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 999px;
+  display: grid;
+  inset: 0;
+  place-items: center;
+  pointer-events: none;
+  position: absolute;
+}
+.btn-62:hover span {
+  -webkit-animation: wobble 0.8s;
+  animation: wobble 0.8s;
+}
+@-webkit-keyframes wobble {
+  0% {
+    transform: translateZ(0);
+  }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate(-5deg);
+  }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate(3deg);
+  }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate(-3deg);
+  }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate(2deg);
+  }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate(-1deg);
+  }
+  to {
+    transform: translateZ(0);
+  }
+}
+@keyframes wobble {
+  0% {
+    transform: translateZ(0);
+  }
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate(-5deg);
+  }
+  30% {
+    transform: translate3d(20%, 0, 0) rotate(3deg);
+  }
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate(-3deg);
+  }
+  60% {
+    transform: translate3d(10%, 0, 0) rotate(2deg);
+  }
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate(-1deg);
+  }
+  to {
+    transform: translateZ(0);
+  }
+}
+
+
+
+
+/* btn 63 */
+.btn-63,
+.btn-63 *,
+.btn-63 :after,
+.btn-63 :before,
+.btn-63:after,
+.btn-63:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-63 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-63:disabled {
+  cursor: default;
+}
+.btn-63:-moz-focusring {
+  outline: auto;
+}
+.btn-63 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-63 [hidden] {
+  display: none;
+}
+.btn-63 {
+  background: none;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.5rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-63 span {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 999px;
+  display: grid;
+  inset: 0;
+  place-items: center;
+  pointer-events: none;
+  position: absolute;
+}
+.btn-63:hover span {
+  -webkit-animation: headShake 0.8s;
+  animation: headShake 0.8s;
+}
+@-webkit-keyframes headShake {
+  0% {
+    transform: translateX(0);
+  }
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+  43.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+@keyframes headShake {
+  0% {
+    transform: translateX(0);
+  }
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+  43.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+  50% {
+    transform: translateX(0);
+  }
+}
+
+
+
+/* btn 64 */
+.btn-64,
+.btn-64 *,
+.btn-64 :after,
+.btn-64 :before,
+.btn-64:after,
+.btn-64:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-64 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-64:disabled {
+  cursor: default;
+}
+.btn-64:-moz-focusring {
+  outline: auto;
+}
+.btn-64 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-64 [hidden] {
+  display: none;
+}
+.btn-64 {
+  background: none;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.5rem 4rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-64 span {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 999px;
+  display: grid;
+  inset: 0;
+  place-items: center;
+  pointer-events: none;
+  position: absolute;
+}
+.btn-64:hover span {
+  -webkit-animation: heartBeat 0.8s;
+  animation: heartBeat 0.8s;
+}
+@-webkit-keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.3);
+  }
+  28% {
+    transform: scale(1);
+  }
+  42% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+/* btn 65 */
+.btn-65,
+.btn-65 *,
+.btn-65 :after,
+.btn-65 :before,
+.btn-65:after,
+.btn-65:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-65 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-65:disabled {
+  cursor: default;
+}
+.btn-65:-moz-focusring {
+  outline: auto;
+}
+.btn-65 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-65 [hidden] {
+  display: none;
+}
+.btn-65 {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 20px 60px;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-65:hover {
+  -webkit-animation: flash 0.8s;
+  animation: flash 0.8s;
+}
+@-webkit-keyframes flash {
+  0%,
+  50%,
+  to {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes flash {
+  0%,
+  50%,
+  to {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+
+
+
+/* btn 66 */
+.btn-66,
+.btn-66 *,
+.btn-66 :after,
+.btn-66 :before,
+.btn-66:after,
+.btn-66:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-66 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-66:disabled {
+  cursor: default;
+}
+.btn-66:-moz-focusring {
+  outline: auto;
+}
+.btn-66 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-66 [hidden] {
+  display: none;
+}
+.btn-66 {
+  --height: 40px;
+  --progress: 0px;
+  border: 2px solid #fff;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: transparent;
+  display: block;
+  font-weight: 900;
+  line-height: var(--height);
+  overflow: hidden;
+  padding: 0 60px;
+  position: relative;
+  text-shadow: 0 calc(var(--progress) * -1) #fff,
+    0 calc(var(--height) - var(--progress)) wheat;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.btn-66:hover {
+  --progress: var(--height);
+  border-color: wheat;
+}
+
+
+
+
+
+/* btn 67 */
+.btn-67,
+.btn-67 *,
+.btn-67 :after,
+.btn-67 :before,
+.btn-67:after,
+.btn-67:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-67 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-67:disabled {
+  cursor: default;
+}
+.btn-67:-moz-focusring {
+  outline: auto;
+}
+.btn-67 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-67 [hidden] {
+  display: none;
+}
+.btn-67 {
+  box-shadow: inset 0 0 0 2px #fff;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.1s linear;
+}
+.btn-67:hover {
+  color: #fff;
+  transition: color 0.1s linear 1s;
+}
+.btn-67:after,
+.btn-67:before {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+.btn-67:before {
+  border-right: var(--border);
+  border-top: var(--border);
+  left: 0;
+  top: 0;
+}
+.btn-67:hover:before {
+  --border: 4px solid #000;
+  -webkit-animation: border-top-and-right 1s forwards;
+  animation: border-top-and-right 1s forwards;
+}
+.btn-67:after {
+  border-bottom: var(--border);
+  border-left: var(--border);
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.btn-67:hover:after {
+  --border: 4px solid #000;
+  -webkit-animation: border-bottom-and-left 1s 1s forwards;
+  animation: border-bottom-and-left 1s 1s forwards;
+}
+@-webkit-keyframes border-top-and-right {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@keyframes border-top-and-right {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@-webkit-keyframes border-bottom-and-left {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@keyframes border-bottom-and-left {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+
+
+/* btn 68 */
+.btn-68,
+.btn-68 *,
+.btn-68 :after,
+.btn-68 :before,
+.btn-68:after,
+.btn-68:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-68 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-68:disabled {
+  cursor: default;
+}
+.btn-68:-moz-focusring {
+  outline: auto;
+}
+.btn-68 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-68 [hidden] {
+  display: none;
+}
+.btn-68 {
+  box-shadow: inset 0 0 0 2px #fff;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.1s linear;
+}
+.btn-68:after,
+.btn-68:before {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+.btn-68:before {
+  border-right: var(--border);
+  border-top: var(--border);
+  left: 0;
+  top: 0;
+}
+.btn-68:hover:before {
+  --border: 4px solid #000;
+  -webkit-animation: border-top-and-right 1s forwards;
+  animation: border-top-and-right 1s forwards;
+}
+.btn-68:after {
+  border-bottom: var(--border);
+  border-left: var(--border);
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.btn-68:hover:after {
+  --border: 4px solid #000;
+  -webkit-animation: border-bottom-and-left 1s forwards;
+  animation: border-bottom-and-left 1s forwards;
+}
+@-webkit-keyframes border-top-and-right {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@keyframes border-top-and-right {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@-webkit-keyframes border-bottom-and-left {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@keyframes border-bottom-and-left {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+
+
+/* btn 69 */
+.btn-69,
+.btn-69 *,
+.btn-69 :after,
+.btn-69 :before,
+.btn-69:after,
+.btn-69:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-69 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-69:disabled {
+  cursor: default;
+}
+.btn-69:-moz-focusring {
+  outline: auto;
+}
+.btn-69 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-69 [hidden] {
+  display: none;
+}
+.btn-69 {
+  box-shadow: inset 0 0 0 2px #fff;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.1s linear;
+}
+.btn-69:after,
+.btn-69:before {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0;
+}
+.btn-69:before {
+  border-left: var(--border);
+  border-top: var(--border);
+  left: 0;
+  top: 0;
+}
+.btn-69:hover:before {
+  --border: 4px solid #000;
+  -webkit-animation: border-top-and-right 1s forwards;
+  animation: border-top-and-right 1s forwards;
+}
+.btn-69:after {
+  border-bottom: var(--border);
+  border-right: var(--border);
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+.btn-69:hover:after {
+  --border: 4px solid #000;
+  -webkit-animation: border-bottom-and-left 1s forwards;
+  animation: border-bottom-and-left 1s forwards;
+}
+@-webkit-keyframes border-top-and-right {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@keyframes border-top-and-right {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 0;
+    width: 100%;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@-webkit-keyframes border-bottom-and-left {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 100%;
+    width: 0;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+@keyframes border-bottom-and-left {
+  0% {
+    height: 0;
+    width: 0;
+  }
+  50% {
+    height: 100%;
+    width: 0;
+  }
+  to {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+
+
+
+/* btn 70 */
+.btn-70,
+.btn-70 *,
+.btn-70 :after,
+.btn-70 :before,
+.btn-70:after,
+.btn-70:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-70 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-70:disabled {
+  cursor: default;
+}
+.btn-70:-moz-focusring {
+  outline: auto;
+}
+.btn-70 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-70 [hidden] {
+  display: none;
+}
+.btn-70 {
+  box-shadow: inset 0 0 0 2px #fff;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: color 0.1s linear;
+}
+.btn-70:after,
+.btn-70:before {
+  content: "";
+  position: absolute;
+}
+.btn-70:before {
+  border-bottom: var(--border);
+  border-top: var(--border);
+  height: 100%;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+.btn-70:hover:before {
+  --border: 4px solid #000;
+  -webkit-animation: border-top-and-bottom 1s forwards;
+  animation: border-top-and-bottom 1s forwards;
+}
+.btn-70:after {
+  border-left: var(--border);
+  border-right: var(--border);
+  bottom: 50%;
+  right: 0;
+  transform: translateY(50%);
+  width: 100%;
+  z-index: -1;
+}
+.btn-70:hover:after {
+  --border: 4px solid #000;
+  -webkit-animation: border-right-and-left 1s forwards;
+  animation: border-right-and-left 1s forwards;
+}
+@-webkit-keyframes border-top-and-bottom {
+  0% {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes border-top-and-bottom {
+  0% {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes border-right-and-left {
+  0% {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes border-right-and-left {
+  0% {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+
+
+
+/* btn 71 */
+.btn-71,
+.btn-71 *,
+.btn-71 :after,
+.btn-71 :before,
+.btn-71:after,
+.btn-71:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-71 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-71:disabled {
+  cursor: default;
+}
+.btn-71:-moz-focusring {
+  outline: auto;
+}
+.btn-71 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-71 [hidden] {
+  display: none;
+}
+.btn-71 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-71:before {
+  --opacity: 0.2;
+  aspect-ratio: 1;
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  left: 50%;
+  opacity: var(--opacity);
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 100%;
+  z-index: -1;
+}
+.btn-71:hover:before {
+  -webkit-animation: enlarge 1s forwards;
+  animation: enlarge 1s forwards;
+}
+@-webkit-keyframes enlarge {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(4);
+  }
+}
+@keyframes enlarge {
+  to {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(4);
+  }
+}
+
+
+
+
+/* btn 72 */
+.btn-72,
+.btn-72 *,
+.btn-72 :after,
+.btn-72 :before,
+.btn-72:after,
+.btn-72:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-72 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-72:disabled {
+  cursor: default;
+}
+.btn-72:-moz-focusring {
+  outline: auto;
+}
+.btn-72 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-72 [hidden] {
+  display: none;
+}
+.btn-72 {
+  background: #fff;
+  border-radius: 999px;
+  box-shadow: 5px 5px 10px #cee3f2, -5px -5px 10px #faffff;
+  box-sizing: border-box;
+  color: #0ea5e9;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.btn-72:active {
+  box-shadow: inset 5px 5px 10px #cee3f2, inset -5px -5px 10px #faffff;
+}
+
+
+
+/* bnt 73 */
+.btn-73,
+.btn-73 *,
+.btn-73 :after,
+.btn-73 :before,
+.btn-73:after,
+.btn-73:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-73 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-73:disabled {
+  cursor: default;
+}
+.btn-73:-moz-focusring {
+  outline: auto;
+}
+.btn-73 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-73 [hidden] {
+  display: none;
+}
+.btn-73 {
+  background: linear-gradient(318.32deg, #c3d1e4, #dde7f3 55%, #d4e0ed);
+  border-radius: 999px;
+  box-shadow: 4px 2px 16px rgba(136, 165, 191, 0.48), -4px -2px 16px #fff;
+  box-sizing: border-box;
+  color: #ccc;
+  color: rgba(201, 215, 230, 0.8);
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-shadow: 2px 2px 2px #d6e1ef99, 0 0 0 #000, 2px 2px 2px #d6e1ef00;
+  text-transform: uppercase;
+  transition: 0.1s;
+}
+.btn-73:active {
+  box-shadow: inset 3px 3px 7px rgba(136, 165, 191, 0.48),
+    inset -3px -3px 7px #fff;
+  color: #000;
+  text-shadow: 1px 1px 1px #d6e1ef99, 0 0 0 #000, 1px 1px 1px #d6e1ef00;
+}
+
+
+
+
+/* btn 74 */
+.btn-74,
+.btn-74 *,
+.btn-74 :after,
+.btn-74 :before,
+.btn-74:after,
+.btn-74:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-74 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-74:disabled {
+  cursor: default;
+}
+.btn-74:-moz-focusring {
+  outline: auto;
+}
+.btn-74 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-74 [hidden] {
+  display: none;
+}
+.btn-74 {
+  background: #f7eff4;
+  border-radius: 999px;
+  box-shadow: inset 4.3px 4.3px 7px #fff;
+  box-sizing: border-box;
+  color: #444;
+  display: block;
+  filter: drop-shadow(3.4px 3.4px 3.4px rgb(183, 177, 181))
+    drop-shadow(-3.4px -3.4px 3.4px white);
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.btn-74:active {
+  box-shadow: inset 4.3px 4.3px 7px #b7b1b5;
+  filter: drop-shadow(0 0 0 rgb(183, 177, 181));
+}
+
+
+
+
+/* btn 75 */
+.btn-75,
+.btn-75 *,
+.btn-75 :after,
+.btn-75 :before,
+.btn-75:after,
+.btn-75:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-75 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-75:disabled {
+  cursor: default;
+}
+.btn-75:-moz-focusring {
+  outline: auto;
+}
+.btn-75 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-75 [hidden] {
+  display: none;
+}
+.btn-75 {
+  background: #e0e5ec;
+  border-radius: 999px;
+  box-shadow: inset 2px 2px 2px 0 hsla(0, 0%, 100%, 0.5),
+    7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-75:active {
+  transform: translateY(3px);
+}
+
+
+
+
+/* btn 76 */
+.btn-76,
+.btn-76 *,
+.btn-76 :after,
+.btn-76 :before,
+.btn-76:after,
+.btn-76:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-76 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-76:disabled {
+  cursor: default;
+}
+.btn-76:-moz-focusring {
+  outline: auto;
+}
+.btn-76 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-76 [hidden] {
+  display: none;
+}
+.btn-76 {
+  --neon: #0ea5e9;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  outline: 4px solid #fff;
+  outline-offset: -4px;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s linear 0.1s;
+}
+.btn-76:hover {
+  background: var(--neon);
+  box-shadow: 0 0 5px var(--neon), 0 0 25px var(--neon), 0 0 50px var(--neon),
+    0 0 100px var(--neon);
+  color: #fff;
+  outline-color: transparent;
+  transition: 0.2s linear 0.6s;
+}
+.btn-76 span {
+  display: block;
+  inset: 0;
+  position: absolute;
+}
+.btn-76 .top {
+  border-top: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .top {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear;
+}
+.btn-76 .right {
+  border-right: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(-100% + var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .right {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.2s;
+}
+.btn-76 .bottom {
+  border-bottom: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateX(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .bottom {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.4s;
+}
+.btn-76 .left {
+  border-left: 4px solid var(--neon);
+  opacity: 0;
+  transform: translateY(calc(100% - var(--progress, 0%)));
+  transition: none;
+}
+.btn-76:hover .left {
+  --progress: 100%;
+  opacity: 1;
+  transition: transform 0.2s linear 0.6s;
+}
+
+
+
+
+/* btn 77 */
+.btn-77,
+.btn-77 *,
+.btn-77 :after,
+.btn-77 :before,
+.btn-77:after,
+.btn-77:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-77 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-77:disabled {
+  cursor: default;
+}
+.btn-77:-moz-focusring {
+  outline: auto;
+}
+.btn-77 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-77 [hidden] {
+  display: none;
+}
+.btn-77 {
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  border: 1px solid;
+  border-radius: 999px;
+  box-shadow: 0 0 0 2em transparent;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+
+
+
+
+/* btn 78 */
+.btn-78,
+.btn-78 *,
+.btn-78 :after,
+.btn-78 :before,
+.btn-78:after,
+.btn-78:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-78 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-78:disabled {
+  cursor: default;
+}
+.btn-78:-moz-focusring {
+  outline: auto;
+}
+.btn-78 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-78 [hidden] {
+  display: none;
+}
+.btn-78 {
+  --height: 80px;
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: var(--height);
+  -webkit-mask-image: none;
+  padding: 0 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-78 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-78:before {
+  background: #fff;
+  border-radius: 20px;
+  content: "";
+  height: calc(var(--height) / 1.4);
+  left: calc(var(--height) * -1);
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  width: calc(var(--height) / 1.4);
+}
+.btn-78:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+
+
+
+/* btn 79 */
+.btn-79,
+.btn-79 *,
+.btn-79 :after,
+.btn-79 :before,
+.btn-79:after,
+.btn-79:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-79 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-79:disabled {
+  cursor: default;
+}
+.btn-79:-moz-focusring {
+  outline: auto;
+}
+.btn-79 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-79 [hidden] {
+  display: none;
+}
+.btn-79 {
+  --height: 80px;
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  height: var(--height);
+  -webkit-mask-image: none;
+  padding: 0 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-79 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-79:before {
+  background: #fff;
+  border-radius: 20px;
+  content: "";
+  height: calc(var(--height) / 1.7);
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.2s;
+  width: calc(var(--height) / 1.7);
+}
+.btn-79:hover:before {
+  left: 0;
+  width: 100%;
+}
+
+
+
+/* btn 80 */
+.btn-80,
+.btn-80 *,
+.btn-80 :after,
+.btn-80 :before,
+.btn-80:after,
+.btn-80:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-80 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-80:disabled {
+  cursor: default;
+}
+.btn-80:-moz-focusring {
+  outline: auto;
+}
+.btn-80 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-80 [hidden] {
+  display: none;
+}
+.btn-80 {
+  border: 2px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-80 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-80:before {
+  background: #fff;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.btn-80:hover:before {
+  -webkit-animation: progress-bar 1.2s;
+  animation: progress-bar 1.2s;
+}
+@-webkit-keyframes progress-bar {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 15%;
+  }
+  25% {
+    opacity: 1;
+    width: 25%;
+  }
+  40% {
+    opacity: 1;
+    width: 35%;
+  }
+  55% {
+    opacity: 1;
+    width: 75%;
+  }
+  60% {
+    opacity: 1;
+    width: 100%;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+  }
+}
+@keyframes progress-bar {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 15%;
+  }
+  25% {
+    opacity: 1;
+    width: 25%;
+  }
+  40% {
+    opacity: 1;
+    width: 35%;
+  }
+  55% {
+    opacity: 1;
+    width: 75%;
+  }
+  60% {
+    opacity: 1;
+    width: 100%;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+  }
+}
+
+
+
+
+/* btn 81 */
+.btn-81,
+.btn-81 *,
+.btn-81 :after,
+.btn-81 :before,
+.btn-81:after,
+.btn-81:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-81 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-81:disabled {
+  cursor: default;
+}
+.btn-81:-moz-focusring {
+  outline: auto;
+}
+.btn-81 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-81 [hidden] {
+  display: none;
+}
+.btn-81 {
+  border: 2px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-81 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-81:before {
+  background: #fff;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.btn-81:hover:before {
+  -webkit-animation: progress-bar 1.2s;
+  animation: progress-bar 1.2s;
+}
+@-webkit-keyframes progress-bar {
+  0% {
+    height: 0%;
+    opacity: 1;
+  }
+  10% {
+    height: 15%;
+    opacity: 1;
+  }
+  25% {
+    height: 25%;
+    opacity: 1;
+  }
+  40% {
+    height: 35%;
+    opacity: 1;
+  }
+  55% {
+    height: 75%;
+    opacity: 1;
+  }
+  60% {
+    height: 100%;
+    opacity: 1;
+  }
+  to {
+    height: 100%;
+    opacity: 0;
+  }
+}
+@keyframes progress-bar {
+  0% {
+    height: 0%;
+    opacity: 1;
+  }
+  10% {
+    height: 15%;
+    opacity: 1;
+  }
+  25% {
+    height: 25%;
+    opacity: 1;
+  }
+  40% {
+    height: 35%;
+    opacity: 1;
+  }
+  55% {
+    height: 75%;
+    opacity: 1;
+  }
+  60% {
+    height: 100%;
+    opacity: 1;
+  }
+  to {
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+
+
+/* btn 83 */
+.btn-83,
+.btn-83 *,
+.btn-83 :after,
+.btn-83 :before,
+.btn-83:after,
+.btn-83:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-83 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-83:disabled {
+  cursor: default;
+}
+.btn-83:-moz-focusring {
+  outline: auto;
+}
+.btn-83 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-83 [hidden] {
+  display: none;
+}
+.btn-83 {
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-83 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+  transition: opacity 0.2s;
+}
+.btn-83:hover span {
+  -webkit-animation: text-reset 0.2s 0.8s forwards;
+  animation: text-reset 0.2s 0.8s forwards;
+  opacity: 0;
+}
+.btn-83:after,
+.btn-83:before {
+  border: 4px solid #fff;
+  border-radius: 999px;
+  bottom: 0;
+  content: "";
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: width 0.2s;
+  width: 100%;
+}
+.btn-83:after {
+  background: #fff;
+  border: none;
+  height: 0;
+  width: 2rem;
+  z-index: -1;
+}
+.btn-83:hover:before {
+  -webkit-animation: border-reset 0.2s linear 0.78s forwards;
+  animation: border-reset 0.2s linear 0.78s forwards;
+  width: 2rem;
+}
+.btn-83:hover:after {
+  -webkit-animation: progress-bar 1s;
+  animation: progress-bar 1s;
+}
+@-webkit-keyframes progress-bar {
+  0% {
+    height: 0%;
+    opacity: 1;
+  }
+  10% {
+    height: 15%;
+    opacity: 1;
+  }
+  25% {
+    height: 25%;
+    opacity: 1;
+  }
+  40% {
+    height: 35%;
+    opacity: 1;
+  }
+  55% {
+    height: 75%;
+    opacity: 1;
+  }
+  60% {
+    height: 100%;
+    opacity: 1;
+  }
+  to {
+    height: 100%;
+    opacity: 0;
+  }
+}
+@keyframes progress-bar {
+  0% {
+    height: 0%;
+    opacity: 1;
+  }
+  10% {
+    height: 15%;
+    opacity: 1;
+  }
+  25% {
+    height: 25%;
+    opacity: 1;
+  }
+  40% {
+    height: 35%;
+    opacity: 1;
+  }
+  55% {
+    height: 75%;
+    opacity: 1;
+  }
+  60% {
+    height: 100%;
+    opacity: 1;
+  }
+  to {
+    height: 100%;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes border-reset {
+  0% {
+    width: 2rem !important;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes border-reset {
+  0% {
+    width: 2rem !important;
+  }
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes text-reset {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes text-reset {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* btn 84 */
+.btn-84,
+.btn-84 *,
+.btn-84 :after,
+.btn-84 :before,
+.btn-84:after,
+.btn-84:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-84 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-84:disabled {
+  cursor: default;
+}
+.btn-84:-moz-focusring {
+  outline: auto;
+}
+.btn-84 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-84 [hidden] {
+  display: none;
+}
+.btn-84 {
+  background: #fff;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 1.2rem 3rem;
+  perspective: 800px;
+  position: relative;
+  text-transform: uppercase;
+  transform: rotateX(8deg);
+  transform-style: preserve-3d;
+  transition: transform 0.2s;
+}
+.btn-84:hover {
+  transform: rotateX(25deg);
+}
+.btn-84:after,
+.btn-84:before {
+  background: #eee;
+  content: "";
+  display: block;
+  height: 20%;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transform: rotateX(-90deg);
+  transform-origin: 0 0;
+  width: 100%;
+  z-index: -1;
+}
+.btn-84:after {
+  background: #ccc;
+  z-index: -2;
+}
+.btn-84:hover:before {
+  -webkit-animation: progress-bar 1.2s forwards;
+  animation: progress-bar 1.2s forwards;
+}
+@-webkit-keyframes progress-bar {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 15%;
+  }
+  25% {
+    opacity: 1;
+    width: 25%;
+  }
+  40% {
+    opacity: 1;
+    width: 35%;
+  }
+  55% {
+    opacity: 1;
+    width: 75%;
+  }
+  60% {
+    opacity: 1;
+    width: 100%;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+  }
+}
+@keyframes progress-bar {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 15%;
+  }
+  25% {
+    opacity: 1;
+    width: 25%;
+  }
+  40% {
+    opacity: 1;
+    width: 35%;
+  }
+  55% {
+    opacity: 1;
+    width: 75%;
+  }
+  60% {
+    opacity: 1;
+    width: 100%;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+  }
+}
+
+
+
+
+/* btn 85 */
+.btn-85,
+.btn-85 *,
+.btn-85 :after,
+.btn-85 :before,
+.btn-85:after,
+.btn-85:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-85 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-85:disabled {
+  cursor: default;
+}
+.btn-85:-moz-focusring {
+  outline: auto;
+}
+.btn-85 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-85 [hidden] {
+  display: none;
+}
+.btn-85 {
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  -webkit-mask-image: none;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-85 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+  transition: opacity 0.2s;
+}
+.btn-85:hover span {
+  -webkit-animation: text-reset 0.2s 0.8s forwards;
+  animation: text-reset 0.2s 0.8s forwards;
+  opacity: 0;
+}
+.btn-85:after,
+.btn-85:before {
+  border: 4px solid #fff;
+  border-radius: 999px;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: height 0.2s cubic-bezier(0.41, 2.01, 0.64, 1);
+  width: 100%;
+}
+.btn-85:after {
+  background: #fff;
+  border: none;
+  height: 2rem;
+  width: 0;
+  z-index: -1;
+}
+.btn-85:hover:before {
+  -webkit-animation: border-reset 0.2s cubic-bezier(0.41, 2.01, 0.64, 1) 0.78s
+    forwards;
+  animation: border-reset 0.2s cubic-bezier(0.41, 2.01, 0.64, 1) 0.78s forwards;
+  height: 2rem;
+}
+.btn-85:hover:after {
+  -webkit-animation: progress-bar 1s cubic-bezier(0.41, 2.01, 0.64, 1) forwards;
+  animation: progress-bar 1s cubic-bezier(0.41, 2.01, 0.64, 1) forwards;
+}
+@-webkit-keyframes progress-bar {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 15%;
+  }
+  25% {
+    opacity: 1;
+    width: 25%;
+  }
+  40% {
+    opacity: 1;
+    width: 35%;
+  }
+  55% {
+    opacity: 1;
+    width: 75%;
+  }
+  60% {
+    opacity: 1;
+    width: 100%;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+  }
+}
+@keyframes progress-bar {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 15%;
+  }
+  25% {
+    opacity: 1;
+    width: 25%;
+  }
+  40% {
+    opacity: 1;
+    width: 35%;
+  }
+  55% {
+    opacity: 1;
+    width: 75%;
+  }
+  60% {
+    opacity: 1;
+    width: 100%;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+  }
+}
+@-webkit-keyframes border-reset {
+  0% {
+    height: 2rem !important;
+  }
+  to {
+    height: 100% !important;
+  }
+}
+@keyframes border-reset {
+  0% {
+    height: 2rem !important;
+  }
+  to {
+    height: 100% !important;
+  }
+}
+@-webkit-keyframes text-reset {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes text-reset {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+/* btn 86 */
+.btn-86,
+.btn-86 *,
+.btn-86 :after,
+.btn-86 :before,
+.btn-86:after,
+.btn-86:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-86 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-86:disabled {
+  cursor: default;
+}
+.btn-86:-moz-focusring {
+  outline: auto;
+}
+.btn-86 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-86 [hidden] {
+  display: none;
+}
+.btn-86 {
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: grid;
+  display: block;
+  font-weight: 700;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  place-items: center;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-86 .fallback {
+  display: none;
+}
+.btn-86 .letters {
+  display: flex;
+}
+.btn-86 span {
+  mix-blend-mode: difference;
+  position: relative;
+}
+.btn-86 span:first-child,
+.btn-86 span:nth-child(6) {
+  --mov: 0;
+  --rot: 1;
+}
+.btn-86 span:nth-child(2),
+.btn-86 span:nth-child(5) {
+  --mov: 1/3;
+  --rot: 2/3;
+}
+.btn-86 span:nth-child(3),
+.btn-86 span:nth-child(4) {
+  --mov: 2/3;
+  --rot: 1/3;
+}
+.btn-86:hover span {
+  -webkit-animation: dance 0.7s linear 0.18s forwards;
+  animation: dance 0.7s linear 0.18s forwards;
+}
+@-webkit-keyframes dance {
+  30%,
+  36% {
+    transform: translateY(calc(-6px * var(--mov))) translateZ(0)
+      rotate(calc(-13deg * var(--rot)));
+  }
+  50% {
+    transform: translateY(calc(3px * var(--mov))) translateZ(0)
+      rotate(calc(6deg * var(--rot)));
+  }
+  70% {
+    transform: translateY(calc(-2px * var(--mov))) translateZ(0)
+      rotate(calc(-3deg * var(--rot)));
+  }
+}
+@keyframes dance {
+  30%,
+  36% {
+    transform: translateY(calc(-6px * var(--mov))) translateZ(0)
+      rotate(calc(-13deg * var(--rot)));
+  }
+  50% {
+    transform: translateY(calc(3px * var(--mov))) translateZ(0)
+      rotate(calc(6deg * var(--rot)));
+  }
+  70% {
+    transform: translateY(calc(-2px * var(--mov))) translateZ(0)
+      rotate(calc(-3deg * var(--rot)));
+  }
+}
+.btn-86:after,
+.btn-86:before {
+  background: #000;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transition: transform 0.2s cubic-bezier(0.76, 0, 0.24, 1);
+  width: 100%;
+  will-change: transform;
+  z-index: -1;
+}
+.btn-86:hover:after,
+.btn-86:hover:before {
+  transform: translateY(-100%);
+}
+.btn-86:after {
+  background: #fff;
+  transition-delay: 0.13s;
+}
+
+
+
+
+/* btn 87 */
+.btn-87,
+.btn-87 *,
+.btn-87 :after,
+.btn-87 :before,
+.btn-87:after,
+.btn-87:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-87 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-87:disabled {
+  cursor: default;
+}
+.btn-87:-moz-focusring {
+  outline: auto;
+}
+.btn-87 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-87 [hidden] {
+  display: none;
+}
+.btn-87 {
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  font-weight: 900;
+  height: 110px;
+  position: relative;
+  text-transform: uppercase;
+  width: 110px;
+}
+.btn-87 span {
+  mix-blend-mode: difference;
+}
+.btn-87:before {
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  inset: 0;
+  opacity: 0;
+  position: absolute;
+  transition: opacity 0.2s linear;
+  z-index: -1;
+}
+.btn-87:hover:before {
+  opacity: 1;
+  transition: opacity 0.2s linear 1s;
+}
+.btn-87 svg {
+  fill: none;
+  stroke: currentcolor;
+  stroke-width: 4px;
+  stroke-dasharray: 450;
+  stroke-dashoffset: 450;
+  height: 105%;
+  left: -5px;
+  pointer-events: none;
+  position: absolute;
+  top: -5px;
+  transition: stroke-dashoffset 0.4s ease-in-out;
+  width: 105%;
+}
+.btn-87 circle {
+  cx: 52%;
+  cy: 52%;
+  r: 45%;
+}
+.btn-87:hover svg {
+  stroke-dashoffset: 120;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+
+
+
+/* btn 88 */
+.btn-88,
+.btn-88 *,
+.btn-88 :after,
+.btn-88 :before,
+.btn-88:after,
+.btn-88:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-88 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-88:disabled {
+  cursor: default;
+}
+.btn-88:-moz-focusring {
+  outline: auto;
+}
+.btn-88 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-88 [hidden] {
+  display: none;
+}
+.btn-88 {
+  background: none;
+  border: 5px solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  height: 90px;
+  -webkit-mask-image: none;
+  padding: 15px;
+  position: relative;
+  text-transform: uppercase;
+  width: 90px;
+}
+.btn-88 svg {
+  fill: #000;
+  position: relative;
+  z-index: 1;
+}
+.btn-88:hover svg {
+  fill: #fff;
+}
+.btn-88:before {
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  inset: 4px;
+  opacity: 1;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(1);
+  transition: 0.5s;
+}
+.btn-88:hover:before {
+  opacity: 0;
+  transform: scale(4);
+}
+
+
+
+
+/* btn 89 */
+.btn-89,
+.btn-89 *,
+.btn-89 :after,
+.btn-89 :before,
+.btn-89:after,
+.btn-89:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-89 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-89:disabled {
+  cursor: default;
+}
+.btn-89:-moz-focusring {
+  outline: auto;
+}
+.btn-89 svg {
+  vertical-align: middle;
+}
+.btn-89 [hidden] {
+  display: none;
+}
+.btn-89 {
+  background: none;
+  border: 2px solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  height: 90px;
+  overflow: hidden;
+  position: relative;
+  text-transform: uppercase;
+  width: 90px;
+}
+.btn-89:hover {
+  -webkit-animation: pulse 0.6s;
+  animation: pulse 0.6s;
+  box-shadow: 0 0 0 2em transparent;
+}
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #fff;
+  }
+}
+.btn-89 svg {
+  --size: 50px;
+  fill: #000;
+  display: block;
+  height: var(--size);
+  left: calc(50% - var(--size) / 2);
+  position: absolute;
+  top: calc(50% - var(--size) / 2);
+  width: var(--size);
+}
+.btn-89:before {
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  inset: 2px;
+  position: absolute;
+}
+.btn-89:hover svg,
+.btn-89:hover:before {
+  -webkit-animation: move 0.5s;
+  animation: move 0.5s;
+}
+@-webkit-keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  51% {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100%);
+  }
+  51% {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
+/* 90 */
+.btn-90,
+.btn-90 *,
+.btn-90 :after,
+.btn-90 :before,
+.btn-90:after,
+.btn-90:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-90 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-90:disabled {
+  cursor: default;
+}
+.btn-90:-moz-focusring {
+  outline: auto;
+}
+.btn-90 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-90 [hidden] {
+  display: none;
+}
+.btn-90 {
+  --size: 60px;
+  background: none;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  -webkit-mask-image: none;
+  padding: 20px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-90 span {
+  font-weight: 900;
+  mix-blend-mode: difference;
+}
+.btn-90 .blobs {
+  filter: url(#goo);
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+.btn-90 .blobs:after,
+.btn-90 .blobs:before {
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  height: var(--size);
+  pointer-events: none;
+  position: absolute;
+  top: calc(50% - var(--size) / 2);
+  transition: transform 0.8s;
+  width: var(--size);
+}
+.btn-90 .blobs:before {
+  left: 100%;
+}
+.btn-90 .blobs:after {
+  right: 100%;
+}
+.btn-90:hover .blobs:before {
+  transform: translateX(-100%);
+}
+.btn-90:hover .blobs:after {
+  transform: translateX(100%);
+}
+
+
+
+
+/* btn 91 */
+.btn-91,
+.btn-91 *,
+.btn-91 :after,
+.btn-91 :before,
+.btn-91:after,
+.btn-91:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-91 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-91:disabled {
+  cursor: default;
+}
+.btn-91:-moz-focusring {
+  outline: auto;
+}
+.btn-91 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-91 [hidden] {
+  display: none;
+}
+.btn-91 {
+  background: none;
+  border: 2px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  display: block;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-91 span {
+  font-weight: 900;
+}
+.btn-91:after,
+.btn-91:before {
+  border: 2px solid red;
+  border-radius: 999px;
+  content: "";
+  inset: -2px;
+  position: absolute;
+  z-index: -1;
+}
+.btn-91:after {
+  border-color: blue;
+}
+.btn-91:hover:before {
+  -webkit-animation: glitch-border 0.2s infinite;
+  animation: glitch-border 0.2s infinite;
+}
+.btn-91:hover:after {
+  animation: glitch-border 0.2s infinite reverse;
+}
+.btn-91:hover span {
+  -webkit-animation: glitch-text 0.2s infinite;
+  animation: glitch-text 0.2s infinite;
+}
+@-webkit-keyframes glitch-text {
+  0% {
+    text-shadow: 0 0 0 red, 0 0 0 blue;
+  }
+  to {
+    text-shadow: -2px 1px 0 red, 2px -1px 0 blue;
+  }
+}
+@keyframes glitch-text {
+  0% {
+    text-shadow: 0 0 0 red, 0 0 0 blue;
+  }
+  to {
+    text-shadow: -2px 1px 0 red, 2px -1px 0 blue;
+  }
+}
+@-webkit-keyframes glitch-border {
+  0% {
+    transform: translate(2px, -1px);
+  }
+  to {
+    transform: translate(-2px, -1px);
+  }
+}
+@keyframes glitch-border {
+  0% {
+    transform: translate(2px, -1px);
+  }
+  to {
+    transform: translate(-2px, -1px);
+  }
+}
+
+
+
+/* btn 92 */
+.btn-92,
+.btn-92 *,
+.btn-92 :after,
+.btn-92 :before,
+.btn-92:after,
+.btn-92:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-92 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-92:disabled {
+  cursor: default;
+}
+.btn-92:-moz-focusring {
+  outline: auto;
+}
+.btn-92 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-92 [hidden] {
+  display: none;
+}
+.btn-92 {
+  border: 3px solid;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 20px 80px;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.btn-92:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #fff;
+  transform: translateY(-0.25em);
+}
+
+
+
+
+/* btn 93 */
+.btn-93,
+.btn-93 *,
+.btn-93 :after,
+.btn-93 :before,
+.btn-93:after,
+.btn-93:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-93 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-93:disabled {
+  cursor: default;
+}
+.btn-93:-moz-focusring {
+  outline: auto;
+}
+.btn-93 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-93 [hidden] {
+  display: none;
+}
+.btn-93 {
+  border: 3px solid;
+  border-radius: 50px 15px 15px 15px/15px 225px 255px 255px;
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  overflow: hidden;
+  padding: 20px 80px;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.btn-93:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #fff;
+  transform: translateY(-0.25em);
+}
+
+
+
+
+/* btn 94 */
+.btn-94,
+.btn-94 *,
+.btn-94 :after,
+.btn-94 :before,
+.btn-94:after,
+.btn-94:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-94 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  text-transform: uppercase;
+}
+.btn-94:disabled {
+  cursor: default;
+}
+.btn-94:-moz-focusring {
+  outline: auto;
+}
+.btn-94 svg {
+  vertical-align: middle;
+}
+.btn-94 [hidden] {
+  display: none;
+}
+.btn-94 {
+  background: hsla(0, 0%, 100%, 0.2);
+  background-clip: content-box;
+  border: 5px solid;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  height: 100px;
+  -webkit-mask-image: none;
+  padding: 0;
+  position: relative;
+  transition: 0.2s;
+  width: 100px;
+}
+.btn-94 svg {
+  --size: 50px;
+  fill: #fff;
+  display: block;
+  height: var(--size);
+  left: calc(50% - var(--size) / 2);
+  position: absolute;
+  top: calc(50% - var(--size) / 2);
+  width: var(--size);
+}
+.btn-94:hover {
+  --size: 70px;
+  border: 10px solid transparent;
+}
+
+
+
+/* btn 95 */
+.btn-95,
+.btn-95 *,
+.btn-95 :after,
+.btn-95 :before,
+.btn-95:after,
+.btn-95:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-95 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  text-transform: uppercase;
+}
+.btn-95:disabled {
+  cursor: default;
+}
+.btn-95:-moz-focusring {
+  outline: auto;
+}
+.btn-95 svg {
+  vertical-align: middle;
+}
+.btn-95 [hidden] {
+  display: none;
+}
+.btn-95 {
+  background: hsla(0, 0%, 100%, 0.2);
+  background-clip: content-box;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  height: 100px;
+  -webkit-mask-image: none;
+  padding: 0;
+  position: relative;
+  transition: 0.2s;
+  width: 100px;
+}
+.btn-95:hover {
+  background: #fff;
+}
+.btn-95 svg {
+  --size: 70px;
+  fill: #fff;
+  display: block;
+  height: var(--size);
+  left: calc(50% - var(--size) / 2);
+  position: absolute;
+  top: calc(50% - var(--size) / 2);
+  width: var(--size);
+}
+.btn-95:hover svg {
+  fill: #000;
+}
+.btn-95:before {
+  border: 5px solid #fff;
+  border-radius: 50%;
+  content: "";
+  inset: 1px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  transform: scale(2);
+  transition: 0.2s;
+}
+.btn-95:hover:before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+
+/* bnt 96 */
+.btn-96,
+.btn-96 *,
+.btn-96 :after,
+.btn-96 :before,
+.btn-96:after,
+.btn-96:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-96 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-96:disabled {
+  cursor: default;
+}
+.btn-96:-moz-focusring {
+  outline: auto;
+}
+.btn-96 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-96 [hidden] {
+  display: none;
+}
+.btn-96 {
+  box-sizing: border-box;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 2rem 5rem;
+  perspective: 800px;
+  position: relative;
+  text-transform: uppercase;
+  transform-style: preserve-3d;
+}
+.btn-96 span {
+  background: #fff;
+  color: #000;
+  display: grid;
+  inset: 0;
+  place-items: center;
+  position: absolute;
+  transform: rotateX(0deg);
+  transform-origin: top center;
+  transition: 0.2s;
+}
+.btn-96:hover span {
+  transform: rotateX(35deg);
+}
+.btn-96:after,
+.btn-96:before {
+  background: #ddd;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateX(0deg);
+  width: 100%;
+  z-index: -1;
+}
+.btn-96:after {
+  background: #ccc;
+  width: 0;
+}
+.btn-96:hover:after {
+  -webkit-animation: progress-bar 1.2s;
+  animation: progress-bar 1.2s;
+}
+@-webkit-keyframes progress-bar {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 15%;
+  }
+  25% {
+    opacity: 1;
+    width: 25%;
+  }
+  40% {
+    opacity: 1;
+    width: 35%;
+  }
+  55% {
+    opacity: 1;
+    width: 75%;
+  }
+  60% {
+    opacity: 1;
+    width: 100%;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+  }
+}
+@keyframes progress-bar {
+  0% {
+    opacity: 1;
+    width: 0;
+  }
+  10% {
+    opacity: 1;
+    width: 15%;
+  }
+  25% {
+    opacity: 1;
+    width: 25%;
+  }
+  40% {
+    opacity: 1;
+    width: 35%;
+  }
+  55% {
+    opacity: 1;
+    width: 75%;
+  }
+  60% {
+    opacity: 1;
+    width: 100%;
+  }
+  to {
+    opacity: 0;
+    width: 100%;
+  }
+}
+
+
+
+
+/* 97 */
+.btn-97,
+.btn-97 *,
+.btn-97 :after,
+.btn-97 :before,
+.btn-97:after,
+.btn-97:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-97 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-97:disabled {
+  cursor: default;
+}
+.btn-97:-moz-focusring {
+  outline: auto;
+}
+.btn-97 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-97 [hidden] {
+  display: none;
+}
+.btn-97 {
+  background: #fff;
+  border: 1px solid;
+  border-radius: 999px;
+  box-sizing: border-box;
+  color: #000;
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  overflow: hidden;
+  padding: 1.2rem 3rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.btn-97:hover {
+  box-shadow: 0 6px 0 -4px #fff, 0 9px 0 -4px #aaa, 0 12px 0 -4px #000;
+  transform: translateY(-5px);
+}
+
+
+
+
+/* btn 98 */
+.btn-98,
+.btn-98 *,
+.btn-98 :after,
+.btn-98 :before,
+.btn-98:after,
+.btn-98:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-98 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-98:disabled {
+  cursor: default;
+}
+.btn-98:-moz-focusring {
+  outline: auto;
+}
+.btn-98 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-98 [hidden] {
+  display: none;
+}
+.btn-98 {
+  --thickness: 4px;
+  background: none;
+  box-sizing: border-box;
+  -webkit-clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% + var(--thickness)),
+    0 calc(100% + var(--thickness))
+  );
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% + var(--thickness)),
+    0 calc(100% + var(--thickness))
+  );
+  display: block;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  padding: 2px 0;
+  position: relative;
+  text-transform: uppercase;
+}
+.btn-98:before {
+  background: #fff;
+  bottom: calc(var(--thickness) * -1);
+  content: "";
+  display: block;
+  height: var(--thickness);
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+}
+.btn-98:hover:before {
+  -webkit-animation: slide 0.5s ease;
+  animation: slide 0.5s ease;
+}
+@-webkit-keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  51% {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(100%);
+  }
+  51% {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+
+
+/* btn 99 */
+.btn-99,
+.btn-99 *,
+.btn-99 :after,
+.btn-99 :before,
+.btn-99:after,
+.btn-99:before {
+  border: 0 solid;
+  box-sizing: border-box;
+}
+.btn-99 {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: button;
+  background-color: #000;
+  background-image: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0;
+  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  padding: 0;
+}
+.btn-99:disabled {
+  cursor: default;
+}
+.btn-99:-moz-focusring {
+  outline: auto;
+}
+.btn-99 svg {
+  display: block;
+  vertical-align: middle;
+}
+.btn-99 [hidden] {
+  display: none;
+}
+.btn-99 {
+  --margin: 20%;
+  background: none;
+  -webkit-clip-path: polygon(
+    calc(var(--margin) * -1) 0,
+    calc(100% + var(--margin)) 0,
+    calc(100% + var(--margin)) 100%,
+    calc(var(--margin) * -1) 100%
+  );
+  clip-path: polygon(
+    calc(var(--margin) * -1) 0,
+    calc(100% + var(--margin)) 0,
+    calc(100% + var(--margin)) 100%,
+    calc(var(--margin) * -1) 100%
+  );
+  display: inline;
+  font-weight: 900;
+  -webkit-mask-image: none;
+  position: relative;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+.btn-99:hover {
+  transform: scale(1.1);
+}
+.btn-99:before {
+  background: #fff;
+  content: "";
+  height: 2px;
+  left: -100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+  width: calc(100% + var(--margin) * 2);
+}
+.btn-99:hover:before {
+  transform: translate(calc(100% - var(--margin) * 2), -50%);
+}
+
+
+
+
+
+/* end button 5 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 6 */
+
+
+
+/* end button 6 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 7 */
+
+
+
+/* end button 7 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 8 */
+
+
+
+/* end button 8 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 9 */
+
+
+
+/* end button 9 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 10 */
+
+
+
+/* end button 10 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+/* start button 11 */
+
+
+
+/* end button 11 */
+
+
+/*  
+===============================================
+===============================================
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
